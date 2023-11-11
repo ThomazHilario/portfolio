@@ -1,0 +1,71 @@
+#container_home{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #343446;
+    height: calc(100vh - 10vh)
+
+    
+}
+
+/* foto de perfil */
+#container_foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+/* container_description */
+#container_description{
+    padding: 5px;
+    text-align: justify;
+    color: white;
+    opacity: 0.85;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* apresentacao */
+#apresentacao h1{
+    font-size: 28px;
+    word-spacing: -1px;
+}
+#apresentacao{
+    line-height: 35px;
+    padding: 0px 5px;
+}
+
+.texto-apresentacao{
+    font-size: 20px;
+    word-spacing: 0px;
+    padding: 0px 4px;
+}
+/* btn-projeto */
+#btn-projeto{
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.9;
+
+    width: 90px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: 2px rgb(0, 0, 0) solid;
+    
+    cursor: pointer;
+
+    margin: auto;
+
+    color: white;
+}
