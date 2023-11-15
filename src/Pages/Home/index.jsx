@@ -1,5 +1,6 @@
 import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
+import whatssapIcon from '../../icons/whatssap.png'
 import {Link} from 'react-router-dom'
 
 export default function Home(){
@@ -17,9 +18,13 @@ export default function Home(){
 
                         <p>Front-End Developer</p>
 
-                        <a href={curriculo} target='_blank' className='curriculo'>Meu Curriculo</a>
                     </div>
                 </article>
+
+                <div id='links_pessoais'>
+                    <a href={curriculo} target='_blank' id='curriculo' className='links_informacao'>Download CV</a>
+                    <a href={curriculo} target='_blank' className='links_informacao'>Entrar em Contato</a>
+                </div>
             </section>
 
             {/* Sobre mim */}
