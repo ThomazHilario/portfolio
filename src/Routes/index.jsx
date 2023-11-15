@@ -23,7 +23,7 @@ export default function RoutesPage(){
         <BrowserRouter>
         {/* header  */}
             <header>
-            <div id='sociais'>
+                <div id='sociais'>
                     <a href=''><img src={iconLikedin} alt="icon" className='icons' /></a>
                     <a href=''><img src={iconGithub} alt="icon" className='icons' /></a>
                     <a href=''><img src={iconInstagram} alt="icon" className='icons'  /></a>

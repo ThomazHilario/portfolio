@@ -9,7 +9,7 @@
 #container_home{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0C0F17;
-    height: 100vh;
+    height: 110vh;
 }
 
 /* Container apresentacao */
@@ -23,7 +23,7 @@
 
     gap: 40px;
 
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -103,7 +103,7 @@
 }
 
 #container_texto{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .texto-apresentacao{
@@ -116,4 +116,36 @@
     color: white;
 
     font-size: 14px;
+}
+
+/* width 481px */
+@media screen and (min-width:481px){
+    /* container_apresentacao */
+    #container_apresentacao{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+        padding-top: 15vh;
+        padding-bottom: 10vh;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* descricao */
+    #container_description{
+        width: 200px;
+    }
+
+    /* h1 da apresentacao */
+    #apresentacao h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .fotoPerfil{
+        height: 230px;
+        width: 230px;
+    }
 }
