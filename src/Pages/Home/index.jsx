@@ -24,8 +24,18 @@ export default function Home(){
 
             {/* Sobre mim */}
             <section id='container_sobremim'>
-                {/* Texto de apresentacao */}
-                <p className='texto-apresentacao'>Universitario de Desenvolvimento Full-stack na Estacio, e tenho habilidades em Front-end usando ferramentas como Html5, Css3, javaScript e ReactJs.</p>
+                <div className='container_titulo'>
+                    {/* Titulo */}
+                    <h1 className='titulo_sobremim'>🙂 Sobre mim</h1>
+                </div>
+
+                <div id='container_texto'>
+                    {/* Texto de apresentacao */}
+                    <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
+                    <p className='texto-apresentacao'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</p>
+                    <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com React</p>
+                    <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
+                </div>
             </section>
         </main>
     )
