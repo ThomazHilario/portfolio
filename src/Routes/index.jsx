@@ -1,5 +1,9 @@
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import iconLikedin from '../icons/icons8-linkedin-48.png'
+import iconGithub from '../icons/icons8-github-48.png'
+import iconInstagram from '../icons/icons8-instagram-48.png'
 import Home from '../Pages/Home'
+
 
 export default function RoutesPage(){
     // Função do menu
@@ -19,14 +23,14 @@ export default function RoutesPage(){
         <BrowserRouter>
         {/* header  */}
             <header>
-                <h1>Thomaz</h1>
+            <div id='sociais'>
+                    <a href=''><img src={iconLikedin} alt="icon" className='icons' /></a>
+                    <a href=''><img src={iconGithub} alt="icon" className='icons' /></a>
+                    <a href=''><img src={iconInstagram} alt="icon" className='icons'  /></a>
+                </div>
 
                 <MenuDesktop/>
-                <i class="bi bi-list" onClick={menuzin}></i>
             </header>
-
-            {/* menu mobile */}
-            <MenuMobile/>
 
             {/* Renderização de rotas */}
             <Routes>
@@ -36,17 +40,6 @@ export default function RoutesPage(){
     )
 }
 
-
-function MenuMobile(){
-    return(
-        <menu id='menu_mobile'>
-            <Link to="/">Home</Link>
-            <Link to="/sobre">Sobre</Link>
-            <Link to="/projetos">Projetos</Link>
-            <Link to="/contatos">Contatos</Link>
-        </menu>
-    )
-}
 
 function MenuDesktop(){
     return(

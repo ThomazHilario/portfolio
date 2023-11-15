@@ -1,46 +1,28 @@
 header{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   height: 10vh;
   padding: 0px 10px;
 
-  background-color: #343446;
+  background-color: #0C0F17;
 }
 
 #menu_desktop{
   display: none;
 }
 
-/*menu mobile*/
-i{
-  font-size: 40px;
-  color: white;
-}
-#menu_mobile{
-  display: none;
-
-  position: absolute;
-
-  width: 200px;
-  background-color: rgba(36, 36, 36, 0.796);
-
-  height: calc(100vh - 10vh);
-
-  font-family: Arial, Helvetica, sans-serif;
+#sociais{
+  display: flex;
+  gap: 10px;
 }
 
-#menu_mobile > a{
-  display: block;
-  text-decoration: none;
-
-  color: white;
-  text-align: center;
-  margin: 40px 0px;
-
-  font-size: 30px;
+.icons{
+  height: 30px;
+  width: 30px;
 }
+
 @media screen and (min-width:481px){
   /* menu desktop*/
   #menu_desktop{
@@ -52,9 +34,5 @@ i{
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  /* icone de hamburguer*/
-  i{
-    display: none;
   }
 }

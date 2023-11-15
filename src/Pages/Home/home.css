@@ -1,71 +1,88 @@
+@font-face {
+    font-family: roboto;
+    src: url('../../Fonts/Roboto/Roboto-Regular.ttf');
+}
+
 #container_home{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #343446;
-    height: calc(100vh - 10vh)
+    background-color: #0C0F17;
+    height: calc(100vh - 10vh);
+}
 
-    
+/* Container apresentacao */
+#container_apresentacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: 1px solid rgb(93, 43, 146);
+
+    gap: 30px;
+
+    padding-bottom: 20px;
 }
 
 /* foto de perfil */
-#container_foto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-}
-img{
-    height: 250px;
-    width: 250px;
+.fotoPerfil{
+    height: 210px;
+    width: 210px;
+
     border-radius: 50%;
     border: 3px solid black;
 }
 
 /* container_description */
 #container_description{
-    padding: 5px;
     text-align: justify;
     color: white;
-    opacity: 0.85;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: roboto;
 
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    width: calc(100% - 30px);
 }
 
 /* apresentacao */
 #apresentacao h1{
-    font-size: 28px;
+    font-size: 45px;
     word-spacing: -1px;
+    margin-bottom: 20px;
+    color: white;
 }
+
+#apresentacao p{
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
 #apresentacao{
-    line-height: 35px;
+    line-height: 25px;
     padding: 0px 5px;
+    margin-bottom: 10px;
 }
 
 .texto-apresentacao{
-    font-size: 20px;
-    word-spacing: 0px;
-    padding: 0px 4px;
-}
-/* btn-projeto */
-#btn-projeto{
-    text-decoration: none;
-    font-weight: bold;
-    opacity: 0.9;
-
-    width: 90px;
-    height: 40px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    outline: 2px rgb(0, 0, 0) solid;
+    padding: 10px;
     
-    cursor: pointer;
-
-    margin: auto;
+    text-align: justify;
+    font-weight: lighter;
+    opacity: 0.7;
 
     color: white;
+}
+
+/* link do meu curriculo */
+.curriculo{
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 15px;
+
+    border-radius: 3px;
+    border: 1px solid rgb(49, 12, 78);
+    box-shadow: 0px 0px 10px rgb(49, 12, 78);
+    padding: 5px;
+}
+
+/* Sobre mim */
+#container_sobremim{
+    margin-top: 20px;
 }
