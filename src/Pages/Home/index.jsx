@@ -38,7 +38,7 @@ export default function Home(){
                     {/* Texto de apresentacao */}
                     <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
                     <p className='texto-apresentacao'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</p>
-                    <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com React</p>
+                    <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</p>
                     <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
                 </div>
             </section>
