@@ -6,22 +6,10 @@ import Home from '../Pages/Home'
 
 
 export default function RoutesPage(){
-    // Função do menu
-    function menuzin(){
-        const menu = document.querySelector('#menu_mobile')
-
-        if(window.outerWidth < 481){
-            if(menu.style.display === 'block'){
-                menu.style.display = 'none'
-            } else{
-                menu.style.display = 'block'
-            }
-        }
-    }
 
     return(
         <BrowserRouter>
-        {/* header  */}
+            {/* header  */}
             <header>
                 <div id='sociais'>
                     <a href=''><img src={iconLikedin} alt="icon" className='icons' /></a>
