@@ -208,6 +208,12 @@
 
 /* width 768px */
 @media screen and (min-width:768px) {
+    /* container Home*/
+    #container_home{
+        height: 110vh;
+    }
+
+    /* container Apresentacao*/
     #container_apresentacao{
         padding-left: 0px;
         padding-right: 0px;
