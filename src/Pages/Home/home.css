@@ -9,7 +9,7 @@
 #container_home{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0C0F17;
-    height: 120vh;
+    height: 220vh;
 }
 
 /* Container apresentacao */
@@ -125,7 +125,7 @@
 }
 
 /* titulo sobremim */
-.titulo_sobremim{
+.titulo{
     color: white;
 
     text-align: center;
@@ -168,6 +168,20 @@
 
     display: none;
 }
+
+
+/* Habilidades css */
+#mySkills{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    display: grid;
+    grid-template-columns: 50px 65px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
 
 /* width 481px */
 @media screen and (min-width:481px){
@@ -231,9 +245,19 @@
 
         grid-template-columns: 250px 250px;
     }
+
+    /* Habilidades css */
+    #mySkills{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+    }
 }
 
 @media screen and (min-width:1024px){
+    #container_home{
+        height: 150vh;
+    }
+
     #container_apresentacao{
         grid-template-columns: 500px 300px;
         justify-content: space-between;
@@ -250,7 +274,7 @@
 
 
     #container_texto{
-        height: 300px;
+        height: 250px;
     }
 
     /* imgIlustrativa */
@@ -261,5 +285,12 @@
 
     .texto-apresentacao{
         font-size: 22px;
+    }
+
+    /* Habilidades css */
+    #mySkills{
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
     }
 }

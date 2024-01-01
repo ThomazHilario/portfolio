@@ -2,6 +2,9 @@ import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 import whatssapIcon from '../../icons/whatssap.png'
 import imgIlustrativa from '../../icons/pc.jpg'
+import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript  } from "react-icons/si";
+
+
 export default function Home(){
     return(
         <main id='container_home'>
@@ -29,6 +32,8 @@ export default function Home(){
             {/* Sobre mim */}
             <SobreMim/>
 
+            {/* Habilidades */}
+            <Habilidades/>
         </main>
     )
 }
@@ -39,7 +44,7 @@ function SobreMim(){
         <section id='container_sobremim'>
             <div className='container_titulo'>
                 {/* Titulo */}
-                <h1 className='titulo_sobremim'>🙂 Sobre mim</h1>
+                <h1 className='titulo'>🙂 Sobre mim</h1>
             </div>
 
             <div id='container_texto'>
@@ -55,5 +60,28 @@ function SobreMim(){
                 <img src={imgIlustrativa} alt='imagem computador' id='imgIlustrativa'/>
             </div>
         </section> 
+    )
+}
+
+// Componente Habilidades
+function Habilidades(){
+    return(
+        <section>
+            <div className='container_titulo'>
+                <h1 className='titulo'>Habilidades</h1>
+            </div>
+
+            {/* Habilidades */}
+            <div id='mySkills'>
+                <SiHtml5 color='blueviolet' size={70}/>
+                <SiCss3 color='blueviolet' size={70}/>
+                <SiJavascript color='blueviolet' size={70}/>
+                <SiTypescript color='blueviolet' size={70}/>
+                <SiReact color='blueviolet' size={70}/>
+                <SiTailwindcss color='blueviolet' size={70}/>
+                <SiGit color='blueviolet' size={70}/>
+                <SiGithub color='blueviolet' size={70}/>
+            </div>
+        </section>
     )
 }
