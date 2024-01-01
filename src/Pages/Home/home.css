@@ -140,8 +140,14 @@
 
 #container_texto{
     margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
+/* texto sobre mim*/
 .texto-apresentacao{
     padding: 10px;
     font-family: roboto;
@@ -152,6 +158,15 @@
     color: white;
 
     font-size: 14px;
+}
+
+/* imagem ilustrativa*/
+#imgIlustrativa{
+    height: 200px;
+    width: 300px;
+    border-radius: 10%;
+
+    display: none;
 }
 
 /* width 481px */
@@ -208,10 +223,6 @@
 
 /* width 768px */
 @media screen and (min-width:768px) {
-    /* container Home*/
-    #container_home{
-        height: 110vh;
-    }
 
     /* container Apresentacao*/
     #container_apresentacao{
@@ -235,5 +246,20 @@
 
     .links_informacao{
         padding: 10px 20px;
+    }
+
+
+    #container_texto{
+        height: 300px;
+    }
+
+    /* imgIlustrativa */
+    #imgIlustrativa{
+        width: 350px;
+        height: 250px;
+    }
+
+    .texto-apresentacao{
+        font-size: 22px;
     }
 }

@@ -1,7 +1,7 @@
 import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 import whatssapIcon from '../../icons/whatssap.png'
-
+import imgIlustrativa from '../../icons/pc.jpg'
 export default function Home(){
     return(
         <main id='container_home'>
@@ -33,7 +33,7 @@ export default function Home(){
     )
 }
 
-
+//Componente SobreMim
 function SobreMim(){
     return(
         <section id='container_sobremim'>
@@ -44,10 +44,15 @@ function SobreMim(){
 
             <div id='container_texto'>
                 {/* Texto de apresentacao */}
-                <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
-                <p className='texto-apresentacao'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</p>
-                <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</p>
-                <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
+                <article>
+                    <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
+                    <p className='texto-apresentacao'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</p>
+                    <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</p>
+                    <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
+                </article>
+
+                {/* Imagem */}
+                <img src={imgIlustrativa} alt='imagem computador' id='imgIlustrativa'/>
             </div>
         </section> 
     )
