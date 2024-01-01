@@ -1,7 +1,6 @@
 import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 import whatssapIcon from '../../icons/whatssap.png'
-import {Link} from 'react-router-dom'
 
 export default function Home(){
     return(
@@ -22,26 +21,34 @@ export default function Home(){
                 </article>
 
                 <div id='links_pessoais'>
-                    <a href={curriculo} target='_blank' id='curriculo' className='links_informacao'>Download CV</a>
-                    <a href={curriculo} target='_blank' className='links_informacao'>Entrar em Contato</a>
+                    <a href={curriculo} target='_blank' rel="noreferrer" id='curriculo' className='links_informacao'>Download CV</a>
+                    <a href={curriculo} target="_blank" rel="noreferrer" className='links_informacao'>Entrar em Contato</a>
                 </div>
             </section>
 
             {/* Sobre mim */}
-            <section id='container_sobremim'>
-                <div className='container_titulo'>
-                    {/* Titulo */}
-                    <h1 className='titulo_sobremim'>🙂 Sobre mim</h1>
-                </div>
+            <SobreMim/>
 
-                <div id='container_texto'>
-                    {/* Texto de apresentacao */}
-                    <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
-                    <p className='texto-apresentacao'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</p>
-                    <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</p>
-                    <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
-                </div>
-            </section>
         </main>
+    )
+}
+
+
+function SobreMim(){
+    return(
+        <section id='container_sobremim'>
+            <div className='container_titulo'>
+                {/* Titulo */}
+                <h1 className='titulo_sobremim'>🙂 Sobre mim</h1>
+            </div>
+
+            <div id='container_texto'>
+                {/* Texto de apresentacao */}
+                <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
+                <p className='texto-apresentacao'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</p>
+                <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</p>
+                <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
+            </div>
+        </section> 
     )
 }
