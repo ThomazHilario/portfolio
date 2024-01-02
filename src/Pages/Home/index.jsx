@@ -68,7 +68,7 @@ function SobreMim(){
 // Componente Habilidades
 function Habilidades(){
     return(
-        <section>
+        <section id='container_habilidade'>
             {/* Titulo */}
             <div className='container_titulo'>
                 <h1 className='titulo'>Habilidades</h1>

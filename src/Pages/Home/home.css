@@ -9,7 +9,7 @@
 #container_home{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0C0F17;
-    height: 220vh;
+    height: 200vh;
 }
 
 /* Container apresentacao */
@@ -172,8 +172,7 @@
 
 /* Habilidades css */
 #mySkills{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 40px;
 
     display: grid;
     grid-template-columns: 50px 65px;
