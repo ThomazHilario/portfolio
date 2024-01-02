@@ -1,18 +1,20 @@
 import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
-import whatssapIcon from '../../icons/whatssap.png'
-import imgIlustrativa from '../../icons/pc.jpg'
+import imgIlustrativa from '../../icons/PC.jpg'
 import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript  } from "react-icons/si";
 
 
 export default function Home(){
     return(
         <main id='container_home'>
+
             {/* Container foto */}
             <section id="container_apresentacao">
+                {/* Minha Foto */}
                 <img src="https://images.pexels.com/photos/8919698/pexels-photo-8919698.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Imagem de perfil" className='fotoPerfil'/>
 
                 <article id='container_description'>
+
                     {/* Container de introducao */}
                     <div id='apresentacao'>
                         <h1>Thomaz</h1>
@@ -67,6 +69,7 @@ function SobreMim(){
 function Habilidades(){
     return(
         <section>
+            {/* Titulo */}
             <div className='container_titulo'>
                 <h1 className='titulo'>Habilidades</h1>
             </div>
