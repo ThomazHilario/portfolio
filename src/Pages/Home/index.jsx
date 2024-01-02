@@ -38,7 +38,7 @@ export default function Home(){
             <Habilidades/>
 
             {/* Projetos */}
-
+            <Projetos/>
         </main>
     )
 }
@@ -105,7 +105,7 @@ function Projetos(){
             <div id='projetos'>
 
             </div>
-            
+
         </section>
     )
 }

@@ -185,6 +185,13 @@
 }
 
 
+/* Projetos */
+#container_projetos{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
 /* width 481px */
 @media screen and (min-width:481px){
     /* container_apresentacao */
@@ -257,7 +264,7 @@
 
 @media screen and (min-width:1024px){
     #container_home{
-        height: 150vh;
+        height: 160vh;
     }
 
     #container_apresentacao{
