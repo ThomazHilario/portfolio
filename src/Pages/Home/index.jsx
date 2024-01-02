@@ -36,6 +36,9 @@ export default function Home(){
 
             {/* Habilidades */}
             <Habilidades/>
+
+            {/* Projetos */}
+
         </main>
     )
 }
@@ -85,6 +88,24 @@ function Habilidades(){
                 <SiGit color='blueviolet' size={70}/>
                 <SiGithub color='blueviolet' size={70}/>
             </div>
+        </section>
+    )
+}
+
+// Componente Projetos
+function Projetos(){
+    return(
+        <section id='container_projetos'>
+
+            {/* Titulo */}
+            <div className='container_titulo'>
+                <h1 className='titulo'>Projetos</h1>
+            </div>
+
+            <div id='projetos'>
+
+            </div>
+            
         </section>
     )
 }

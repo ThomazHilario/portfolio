@@ -101,6 +101,8 @@
 
     color: white;
     opacity: 0.7;
+
+    transition: 0.7s;
 }
 /* whatssap_link */
 .whatssap_link{
@@ -158,6 +160,7 @@
     color: white;
 
     font-size: 14px;
+
 }
 
 /* imagem ilustrativa*/
@@ -269,6 +272,13 @@
 
     .links_informacao{
         padding: 10px 20px;
+    }
+
+    .links_informacao:hover{
+        padding: 10px 10px;
+        transition: 0.7s;
+
+        background-color: rgb(106, 47, 157);
     }
 
 
