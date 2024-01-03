@@ -104,6 +104,22 @@ function Projetos(){
 
             <div id='projetos'>
 
+                <a href='https://capputeeno-app.vercel.app' className='cardProjeto'>
+                    {/* Titulo */}
+                    <h5>Capputeeno</h5>
+
+                    {/* Descricao */}
+                    <p>Desafio de um site de E-commerce da Rocketseat</p>
+
+                    {/* Tecnologias usadas */}
+                    <div className='container_skills'>
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>TailwindCss</span>
+                    </div>
+                    
+                    <img src=''/>
+                </a>
             </div>
 
         </section>

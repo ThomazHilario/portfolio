@@ -9,7 +9,7 @@
 #container_home{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0C0F17;
-    height: 200vh;
+    height: 240vh;
 }
 
 /* Container apresentacao */
@@ -187,11 +187,55 @@
 
 /* Projetos */
 #container_projetos{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0px;
 }
 
+#projetos{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* CardProjeto */
+.cardProjeto{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+    transition: 0.7s;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+}
+.cardProjeto:hover{
+    background-color: rgba(49, 12, 78, 0.318);
+}
+.cardProjeto > h5{
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+}
+
+.cardProjeto > p{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    opacity: 0.6;
+}
+
+.container_skills{
+    display: flex;
+    gap: 6px;
+}
+
+.container_skills > span{
+    color: #7a4ae2e8;
+    background-color: rgba(49, 12, 78, 0.473);
+    padding: 5px;
+    border-radius: 7px;
+}
 /* width 481px */
 @media screen and (min-width:481px){
     /* container_apresentacao */
@@ -264,7 +308,7 @@
 
 @media screen and (min-width:1024px){
     #container_home{
-        height: 160vh;
+        height: 200vh;
     }
 
     #container_apresentacao{
