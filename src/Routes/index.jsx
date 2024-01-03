@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import iconLikedin from '../icons/icons8-linkedin-48.png'
 import iconGithub from '../icons/icons8-github-48.png'
 import iconInstagram from '../icons/icons8-instagram-48.png'
@@ -33,10 +33,10 @@ function MenuDesktop(){
     return(
         <div id='container_menu_desktop'>
             <menu id='menu_desktop'>
-                <Link to="/">Home</Link>
-                <Link to="/sobre">Sobre</Link>
-                <Link to="/projetos">Projetos</Link>
-                <Link to="/contatos">Contatos</Link>
+                <button>Home</button>
+                <button>Sobre</button>
+                <button>Projetos</button>
+                <button>Contatos</button>
             </menu>
        </div>
     )
