@@ -2,7 +2,7 @@ import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 import imgIlustrativa from '../../icons/PC.jpg'
 import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript  } from "react-icons/si";
-
+import capputeenoImage from '../../images/CapputeenoImage.png'
 
 export default function Home(){
     return(
@@ -118,7 +118,7 @@ function Projetos(){
                         <span>TailwindCss</span>
                     </div>
                     
-                    <img src=''/>
+                    <img className='imgProjeto' src={capputeenoImage}/>
                 </a>
             </div>
 
