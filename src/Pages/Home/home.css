@@ -224,10 +224,12 @@
 
 .cardProjeto > p{
     font-size: 14px;
+    word-break: keep-all;
+    text-align: justify;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     opacity: 0.6;
-    height: 100px;
+    height: 60px;
     display: flex;
     width: 250px;
 }
@@ -245,6 +247,11 @@
 }
 
 .imgProjeto{
+    border-radius: 8px;
+    height: 180px;
+}
+
+.cardProjeto > video{
     border-radius: 8px;
     height: 180px;
 }
@@ -368,5 +375,19 @@
         gap: 70px;
         justify-content: center;
         align-items: center;
+    }
+
+    /* Projetos */
+    #projetos{
+        grid-template-columns: 300px 300px 300px;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width:1280px){
+    /* projetos */
+    #projetos{
+        grid-template-columns: 300px 300px 300px 300px;
+        gap: 30px;
     }
 }

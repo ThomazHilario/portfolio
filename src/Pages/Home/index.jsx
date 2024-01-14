@@ -2,8 +2,11 @@ import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 import imgIlustrativa from '../../icons/PC.jpg'
 import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript  } from "react-icons/si";
+
+// Apresentações dos projetos
 import capputeenoImage from '../../images/CapputeenoImage.png'
 import crudApp from '../../images/crudappimage.png'
+import jogoDaMemoria from '../../videos/jogo-da-memoria-projeto.mp4'
 
 export default function Home(){
     return(
@@ -111,7 +114,7 @@ function Projetos(){
                     <h5>Capputeeno</h5>
 
                     {/* Descricao */}
-                    <p>Desafio de um site de E-commerce da Rocketseat</p>
+                    <p>Desafio de um site de E-commerce da Rocketseat.</p>
 
                     {/* Tecnologias usadas */}
                     <div className='container_skills'>
@@ -139,6 +142,25 @@ function Projetos(){
                     {/* imagem do projeto */}
                     <img className='imgProjeto' src={crudApp} alt='image crudapp'/>
                 </a>
+
+                <a href='' target='blank' className='cardProjeto'>
+                    {/* Title */}
+                    <h5>Jogo da memória</h5>
+
+                    {/* Descrição */}
+                    <p>App web de jogo da memória, com experiência intuitiva e divertida.</p>
+
+                    {/* Tecnologias */}
+                    <div className='container_skills'>
+                        <span>React</span>
+                    </div>
+
+                    {/* Apresentação do projeto */}
+                    <video autoPlay loop muted>
+                        <source src={jogoDaMemoria} />
+                    </video>
+                </a>
+
             </div>
 
         </section>
