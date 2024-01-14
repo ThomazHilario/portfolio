@@ -3,6 +3,7 @@ import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 import imgIlustrativa from '../../icons/PC.jpg'
 import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript  } from "react-icons/si";
 import capputeenoImage from '../../images/CapputeenoImage.png'
+import crudApp from '../../images/crudappimage.png'
 
 export default function Home(){
     return(
@@ -104,7 +105,8 @@ function Projetos(){
 
             <div id='projetos'>
 
-                <a href='https://capputeeno-app.vercel.app' className='cardProjeto'>
+                {/* Projeto capputeeno */}
+                <a href='https://capputeeno-app.vercel.app' target='blank' className='cardProjeto'>
                     {/* Titulo */}
                     <h5>Capputeeno</h5>
 
@@ -118,7 +120,24 @@ function Projetos(){
                         <span>TailwindCss</span>
                     </div>
                     
-                    <img className='imgProjeto' src={capputeenoImage}/>
+                    <img className='imgProjeto' src={capputeenoImage} alt='imagem capputeeno'/>
+                </a>
+
+                <a href='https://crud-app-cyan.vercel.app' target='blank' className='cardProjeto'>
+                    {/* Title */}
+                    <h5>Crud App</h5>
+
+                    {/* Descrição */}
+                    <p>Implementação de um sistema de chamados com banco de dados.</p>
+
+                    {/* Tecnologias usadas */}
+                    <div className='container_skills'>
+                        <span>React</span>
+                        <span>Firebase</span>
+                    </div>
+
+                    {/* imagem do projeto */}
+                    <img className='imgProjeto' src={crudApp} alt='image crudapp'/>
                 </a>
             </div>
 
