@@ -11,6 +11,9 @@
     background-color: #0C0F17;
 }
 
+
+
+
 /* Container apresentacao */
 #container_apresentacao{
     display: grid;
@@ -39,6 +42,7 @@
     height: 240px;
     width: 240px;
 }
+
 /* container_description */
 #container_description{
     text-align: justify;
@@ -114,7 +118,6 @@
 
 /* Sobre mim */
 #container_sobremim{
-    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -124,6 +127,21 @@
     justify-content: center;
     align-items: center;
 }
+#links_pessoais, #plataformasDigitais{
+    padding: 10px;
+}
+#plataformasDigitais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#plataformasDigitais > svg{
+    cursor: pointer;
+}
+
+
 
 /* titulo sobremim */
 .titulo{
@@ -140,7 +158,8 @@
 }
 
 #container_texto{
-    margin-top: 20px;
+    margin-top: 30px;
+    padding: 5px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -174,7 +193,8 @@
 
 /* Habilidades css */
 #mySkills{
-    margin-top: 40px;
+    padding: 40px;
+    margin-top: 30px;
 
     display: grid;
     grid-template-columns: 50px 65px;
@@ -184,12 +204,18 @@
 }
 
 
+
+
+
+
+
 /* Projetos */
 #container_projetos{
     padding: 40px 0px;
 }
 
 #projetos{
+    padding: 40px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;

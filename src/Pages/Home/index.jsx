@@ -1,7 +1,7 @@
 import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 import imgIlustrativa from '../../icons/PC.jpg'
-import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript  } from "react-icons/si";
+import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiLinkedin } from "react-icons/si";
 
 // Apresentações dos projetos
 import capputeenoImage from '../../images/CapputeenoImage.png'
@@ -32,6 +32,11 @@ export default function Home(){
                 <div id='links_pessoais'>
                     <a href={curriculo} target='_blank' rel="noreferrer" id='curriculo' className='links_informacao'>Download CV</a>
                     <a href={curriculo} target="_blank" rel="noreferrer" className='links_informacao'>Entrar em Contato</a>
+                </div>
+
+                <div id='plataformasDigitais'>
+                    <SiGithub size={25} color='blueviolet'/>
+                    <SiLinkedin size={25} color='blueviolet'/>
                 </div>
             </section>
 
