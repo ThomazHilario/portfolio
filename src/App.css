@@ -15,6 +15,8 @@ header{
 #menu_desktop{
   display: flex;
   gap: 20px;
+
+  transition: 0.7s;
 }
 
 #menu_desktop > button{
@@ -32,5 +34,18 @@ header{
     display: flex;
     position: fixed;
     width: 100%;
+  }
+}
+
+@media screen and (min-width:768px){
+
+  /* Alterando o gap */
+  #menu_desktop{
+    gap: 40px;
+  }
+
+  /* Alterando a font dos buttons */
+  #menu_desktop > button{
+    font-size: 20px;
   }
 }
