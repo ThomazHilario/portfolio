@@ -38,6 +38,7 @@
     grid-area: 'fotoPerfil';
 
     transition: 0.7s;
+    object-fit: cover;
 }
 .fotoPerfil:hover{
     height: 240px;

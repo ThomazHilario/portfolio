@@ -5,6 +5,9 @@ import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, S
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 
+// Foto de perfil
+import Foto from '../../assets/foto.jpeg'
+
 // Apresentações dos projetos
 import capputeenoImage from '../../images/CapputeenoImage.png'
 import crudApp from '../../images/crudappimage.png'
@@ -17,7 +20,7 @@ export default function Home(){
             {/* Container foto */}
             <section id="container_apresentacao">
                 {/* Minha Foto */}
-                <img src="https://images.pexels.com/photos/8919698/pexels-photo-8919698.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Imagem de perfil" className='fotoPerfil'/>
+                <img src={Foto} alt="Imagem de perfil" className='fotoPerfil'/>
 
                 <article id='container_description'>
 
