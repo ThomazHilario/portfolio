@@ -29,16 +29,17 @@ function MenuDesktop(){
         gsap.registerPlugin(ScrollToPlugin)
 
         if(window.innerWidth >= 1024){
-            // Caso o texto do button seja Home
-            if(text === 'Home'){ 
-                gsap.to(window,{duration:1,scrollTo:0})
-            }
-    
+
             // Caso o texto do button seja Sobre
             if(text === 'Sobre'){
-                gsap.to(window,{duration:1,scrollTo:200})
+                gsap.to(window,{duration:1,scrollTo:0})
             }
-    
+            
+            // Casoo o texto do button seja habilidades
+            if(text === 'Habilidades'){
+                gsap.to(window,{duration:1,scrollTo:650})
+            }
+
             // Caso o texto do button seja Projetos
             if(text === 'Projetos'){
                 gsap.to(window,{duration:1,scrollTo:1086})
@@ -54,8 +55,8 @@ function MenuDesktop(){
     return(
         <div id='container_menu_desktop'>
             <menu id='menu_desktop'>
-                <button onClick={(e) => scrollSection(e.target.textContent)}>Home</button>
                 <button onClick={(e) => scrollSection(e.target.textContent)}>Sobre</button>
+                <button onClick={(e) => scrollSection(e.target.textContent)}>Habilidades</button>
                 <button onClick={(e) => scrollSection(e.target.textContent)}>Projetos</button>
                 <button onClick={(e) => scrollSection(e.target.textContent)}>Contatos</button>
             </menu>
