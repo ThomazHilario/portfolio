@@ -40,10 +40,6 @@
     transition: 0.7s;
     object-fit: cover;
 }
-.fotoPerfil:hover{
-    height: 240px;
-    width: 240px;
-}
 
 /* container_description */
 #container_description{
@@ -137,6 +133,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: auto    ;
 }
 
 #plataformasDigitais > svg{
@@ -333,7 +330,7 @@
         'containerDescription fotoPerfil '
         'linksPessoais .';
 
-        grid-template-columns: 250px 240px;
+        grid-template-columns: 260px 240px;
     }
 
     /* descricao */
@@ -355,8 +352,8 @@
 
     /* foto de perfil*/
     .fotoPerfil{
-        height: 230px;
-        width: 230px;
+        height: 180px;
+        width: 180px;
         display: block;
 
         grid-column: 2;
@@ -366,6 +363,10 @@
     #links_pessoais{
         gap: 10px;
         width: 300px;
+    }
+
+    #plataformasDigitais{
+        width: 210px;
     }
 }
 
@@ -378,6 +379,15 @@
         padding-right: 0px;
 
         grid-template-columns: 250px 250px;
+    }
+
+    .fotoPerfil:hover{
+        height: 240px;
+        width: 240px;
+    }
+
+    #plataformasDigitais{
+        width: auto;
     }
 
     /* Habilidades css */
