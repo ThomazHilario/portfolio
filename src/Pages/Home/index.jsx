@@ -36,7 +36,7 @@ export default function Home(){
 
                 <div id='links_pessoais'>
                     <a href={curriculo} target='_blank' rel="noreferrer" id='curriculo' className='links_informacao'>Download CV</a>
-                    <a href={curriculo} target="_blank" rel="noreferrer" className='links_informacao'>Entrar em Contato</a>
+                    <a href='https://api.whatsapp.com/send?phone=5585988274949' target="_blank" rel="noreferrer" className='links_informacao'>Entrar em Contato</a>
                 </div>
 
                 <div id='plataformasDigitais'>
@@ -197,7 +197,7 @@ function Contatos(){
                     <p>thomazhilario5@gmail.com</p>
                 </a>
 
-                <a className='linkSocial' href='https://api.whatsapp.com/send?phone=5521968892704' target='blank'>
+                <a className='linkSocial' href='https://api.whatsapp.com/send?phone=5585988274949' target='blank'>
                     <FiPhone color='blueviolet' size={50}/>
                     <h1>Telefone</h1>
                     <p>(85) 98827-4949</p>
