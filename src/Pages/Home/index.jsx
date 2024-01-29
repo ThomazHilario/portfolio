@@ -15,7 +15,7 @@ import jogoDaMemoria from '../../videos/jogo-da-memoria-projeto.mp4'
 
 export default function Home(){
     return(
-        <main id='container_home'>
+        <main id='container_main'>
 
             {/* Container foto */}
             <section id="container_apresentacao">
