@@ -6,7 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 
 // Foto de perfil
-import Foto from '../../assets/foto.jpeg'
+import Foto from '../../assets/foto.png'
 
 // Apresentações dos projetos
 import capputeenoImage from '../../images/CapputeenoImage.png'
