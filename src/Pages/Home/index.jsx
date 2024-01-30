@@ -12,6 +12,7 @@ import Foto from '../../assets/foto.png'
 import capputeenoImage from '../../images/CapputeenoImage.png'
 import crudApp from '../../images/crudappimage.png'
 import jogoDaMemoria from '../../videos/jogo-da-memoria-projeto.mp4'
+import decodificador from '../../images/Decodificador-de-codigo.png'
 
 export default function Home(){
     return(
@@ -19,6 +20,7 @@ export default function Home(){
 
             {/* Container foto */}
             <section id="container_apresentacao">
+
                 {/* Minha Foto */}
                 <img src={Foto} alt="Imagem de perfil" className='fotoPerfil'/>
 
@@ -35,7 +37,10 @@ export default function Home(){
                 </article>
 
                 <div id='links_pessoais'>
+
                     <a href={curriculo} target='_blank' rel="noreferrer" id='curriculo' className='links_informacao'>Download CV</a>
+
+
                     <a href='https://api.whatsapp.com/send?phone=5585988274949' target="_blank" rel="noreferrer" className='links_informacao'>Entrar em Contato</a>
                 </div>
 
@@ -172,6 +177,22 @@ function Projetos(){
                     <video autoPlay loop muted>
                         <source src={jogoDaMemoria} />
                     </video>
+                </a>
+
+                <a href='https://thomazhilario.github.io/Decodificador-de-texto/'  target='blank' className='cardProjeto'>
+                    {/* Title */}
+                    <h5>Decodificador de texto</h5>
+
+                    {/* Descricao */}
+                    <p>Decodificador de texto desenvolvido em uma colaboração entre o Challenge One e a Alura.</p>
+
+                    <div className='container_skills'>
+                        <span>Html</span>
+                        <span>Css</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <img src={decodificador} className='imgProjeto' alt='Imagem do decodificador de texto'/>
                 </a>
 
             </div>
