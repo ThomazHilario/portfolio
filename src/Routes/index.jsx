@@ -28,6 +28,7 @@ function MenuDesktop(){
         // Registrando plugin
         gsap.registerPlugin(ScrollToPlugin)
 
+        // Condição caso o tamanho da tela seja maior ou igual a 600px
         if(window.innerWidth >= 600){
             // Caso o texto do button seja Sobre
             if(text === 'Sobre'){
