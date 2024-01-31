@@ -28,6 +28,7 @@ function MenuDesktop(){
         // Registrando plugin
         gsap.registerPlugin(ScrollToPlugin)
 
+        if(window.innerWidth >= 600){
             // Caso o texto do button seja Sobre
             if(text === 'Sobre'){
                 gsap.to(window,{duration:1,scrollTo:0})
@@ -35,18 +36,39 @@ function MenuDesktop(){
             
             // Casoo o texto do button seja habilidades
             if(text === 'Habilidades'){
-                gsap.to(window,{duration:1,scrollTo:document.getElementById('container_habilidade')})
+                gsap.to(window,{duration:1,scrollTo:550})
             }
 
             // Caso o texto do button seja Projetos
             if(text === 'Projetos'){
-                gsap.to(window,{duration:1,scrollTo:document.getElementById('container_projetos')})
+                gsap.to(window,{duration:1,scrollTo:1000})
             }
     
             // Caso o texto do button seja Contatos
             if(text === 'Contatos'){
                 gsap.to(window,{duration:1,scrollTo:document.getElementById('container_Contatos')})  
             }
+        }else{
+             // Caso o texto do button seja Sobre
+             if(text === 'Sobre'){
+                gsap.to(window,{duration:1,scrollTo:0})
+            }
+            
+            // Casoo o texto do button seja habilidades
+            if(text === 'Habilidades'){
+                gsap.to(window,{duration:1,scrollTo:950})
+            }
+
+            // Caso o texto do button seja Projetos
+            if(text === 'Projetos'){
+                gsap.to(window,{duration:1,scrollTo:1550})
+            }
+    
+            // Caso o texto do button seja Contatos
+            if(text === 'Contatos'){
+                gsap.to(window,{duration:1,scrollTo:document.getElementById('container_Contatos')})  
+            }
+        }
         
 
     }
