@@ -195,6 +195,24 @@ function Projetos(){
                     <img src={decodificador} className='imgProjeto' alt='Imagem do decodificador de texto'/>
                 </a>
 
+                <a href='https://capputeeno-app.vercel.app' target='blank' className='cardProjeto'>
+                    {/* Titulo */}
+                    <h5>Notes</h5>
+
+                    {/* Descricao */}
+                    <p>App da NLW - Expert da Rocketseat. Plataforma para criar e gerenciar notas</p>
+
+                    {/* Tecnologias usadas */}
+                    <div className='container_skills'>
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>TailwindCss</span>
+                        <span>Firebase</span>
+                    </div>
+                    
+                    <img className='imgProjeto' src={capputeenoImage} alt='imagem do notes'/>
+                </a>
+
             </div>
 
         </section>
