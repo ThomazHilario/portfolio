@@ -13,6 +13,7 @@ import capputeenoImage from '../../images/CapputeenoImage.png'
 import crudApp from '../../images/crudappimage.png'
 import jogoDaMemoria from '../../videos/jogo-da-memoria-projeto.mp4'
 import decodificador from '../../images/Decodificador-de-codigo.png'
+import notesImg from '../../images/notesImg.jpeg'
 
 export default function Home(){
     return(
@@ -195,7 +196,7 @@ function Projetos(){
                     <img src={decodificador} className='imgProjeto' alt='Imagem do decodificador de texto'/>
                 </a>
 
-                <a href='https://capputeeno-app.vercel.app' target='blank' className='cardProjeto'>
+                <a href='https://notes-nlw-rocketseat.vercel.app/' target='blank' className='cardProjeto'>
                     {/* Titulo */}
                     <h5>Notes</h5>
 
@@ -210,7 +211,7 @@ function Projetos(){
                         <span>Firebase</span>
                     </div>
                     
-                    <img className='imgProjeto' src={capputeenoImage} alt='imagem do notes'/>
+                    <img className='imgProjeto' src={notesImg} alt='imagem do notes'/>
                 </a>
 
             </div>
