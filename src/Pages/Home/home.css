@@ -164,7 +164,7 @@
         'containerDescription fotoPerfil '
         'linksPessoais .';
 
-        grid-template-columns: 260px 240px;
+        grid-template-columns: 220px 240px;
     }
 
     /* descricao */
