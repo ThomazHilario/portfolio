@@ -3,25 +3,6 @@
     padding-bottom: 40px;
 }
 
-.container_titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo{
-    color: white;
-
-    text-align: center;
-    font-size: 1.25rem;
-
-    border-radius: 3px;
-
-    background-color: rgba(49, 12, 78, 0.318);
-    width: 200px;
-    padding: 3px;
-}
-
 #container_texto{
     margin-top: 30px;
     padding: 5px;

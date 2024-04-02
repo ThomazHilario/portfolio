@@ -1,0 +1,28 @@
+/* Habilidades css */
+#mySkills{
+    padding: 40px;
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: 50px 65px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+/* media screen and (min-width:768px) */
+@media screen and (min-width:768px){
+    #mySkills{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+    }
+}
+
+/* media screen and (min-width:1024px) */
+@media screen and (min-width:1024px){
+    #mySkills{
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+}

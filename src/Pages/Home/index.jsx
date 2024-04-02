@@ -6,9 +6,10 @@ import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 
 // import Components
 import { SobreMim } from '../../Components/Sobre/sobre';
+import { Habilidades } from '../../Components/Habilidades/habilidades';
 
 // import icons
-import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 
@@ -70,30 +71,6 @@ export default function Home(){
             {/* Contatos */}
             <Contatos/>
         </main>
-    )
-}
-
-// Componente Habilidades
-function Habilidades(){
-    return(
-        <section id='container_habilidade'>
-            {/* Titulo */}
-            <div className='container_titulo'>
-                <h1 className='titulo'>Habilidades</h1>
-            </div>
-
-            {/* Habilidades */}
-            <div id='mySkills'>
-                <SiHtml5 color='blueviolet' size={70}/>
-                <SiCss3 color='blueviolet' size={70}/>
-                <SiJavascript color='blueviolet' size={70}/>
-                <SiTypescript color='blueviolet' size={70}/>
-                <SiReact color='blueviolet' size={70}/>
-                <SiTailwindcss color='blueviolet' size={70}/>
-                <SiGit color='blueviolet' size={70}/>
-                <SiGithub color='blueviolet' size={70}/>
-            </div>
-        </section>
     )
 }
 
