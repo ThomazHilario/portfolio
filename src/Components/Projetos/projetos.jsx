@@ -1,3 +1,5 @@
+import { useGitHubAutomatedRepos } from 'github-automated-repos'
+
 // Apresentações dos projetos
 import capputeenoImage from '../../images/CapputeenoImage.png'
 import crudApp from '../../images/crudappimage.png'
@@ -9,6 +11,8 @@ import notesImg from '../../images/notesImg.jpeg'
 import './projetos.css'
 
 export const Projetos = () => {
+    const data = useGitHubAutomatedRepos('ThomazHilario','deployed')
+    console.log(data)
     return(
         <section id='container_projetos'>
 
