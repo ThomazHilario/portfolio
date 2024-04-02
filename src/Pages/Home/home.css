@@ -148,39 +148,6 @@
     cursor: pointer;
 }
 
-/* Contatos */
-#contatos{
-    transition: 0.7s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-
-    padding: 40px;
-    margin-top: 30px;
-}
-
-#contatos > .linkSocial{
-    text-decoration: none;
-    height: 200px;
-    transition: 0.7s;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    cursor: pointer;
-}
-#contatos > .linkSocial > svg{
-    transition: 0.7s;
-}
-
-#contatos > .linkSocial > p{
-    color: rgba(240, 240, 240, 0.374);
-}
 /* width 481px */
 @media screen and (min-width:481px){
     /* container_apresentacao */
@@ -261,11 +228,6 @@
     #plataformasDigitais{
         width: auto;
     }
-
-    #contatos{
-        display: grid;
-        grid-template-columns: 200px 200px;
-    }
 }
 
 @media screen and (min-width:1024px){
@@ -295,10 +257,5 @@
     #imgIlustrativa{
         width: 350px;
         height: 250px;
-    }
-
-    #contatos{
-        grid-template-columns: 200px 200px 200px 200px;
-        gap: 50px;
     }
 }
