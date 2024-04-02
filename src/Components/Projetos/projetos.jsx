@@ -116,8 +116,9 @@ export const Projetos2 = () => {
 }
 
 export const Projetos = () => {
+    // Buscando meus projetos
     const data = useGitHubAutomatedRepos('ThomazHilario','deployed')
-    console.log(data)
+
     return(
         <section id='container_projetos'>
             {/* Titulo */}
