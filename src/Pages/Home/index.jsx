@@ -5,7 +5,7 @@ import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 
 // import Components
-import { SobreMim } from '../../Components/sobre';
+import { SobreMim } from '../../Components/Sobre/sobre';
 
 // import icons
 import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiLinkedin } from "react-icons/si";
