@@ -10,9 +10,8 @@ import notesImg from '../../images/notesImg.jpeg'
 // import css
 import './projetos.css'
 
-export const Projetos = () => {
-    const data = useGitHubAutomatedRepos('ThomazHilario','deployed')
-    console.log(data)
+export const Projetos2 = () => {
+
     return(
         <section id='container_projetos'>
 
@@ -112,6 +111,45 @@ export const Projetos = () => {
 
             </div>
 
+        </section>
+    )
+}
+
+export const Projetos = () => {
+    const data = useGitHubAutomatedRepos('ThomazHilario','deployed')
+    console.log(data)
+    return(
+        <section id='container_projetos'>
+            {/* Titulo */}
+            <div className='container_titulo'>
+                    <h1 className='titulo'>Projetos</h1>
+            </div>
+
+            <div id='projetos'>
+                {
+                    data.map((item, idx) => {
+                        return(
+                            <a key={idx} href={item.homepage} target='blank' className='cardProjeto'>
+                                {/* Titulo */}
+                                <h5>{item.name.replace(/(-app|-+)/g,' ')}</h5>
+
+                                {/* Descricao */}
+                                <p>{item.description}</p>
+
+                                {/* Tecnologias usadas */}
+                                <div className='container_skills'>
+                                    {
+                                        item.topics.filter(item => item !== 'deployed').map((item,idx) => <span key={idx}>{item[0].toUpperCase() + item.substring(1)}</span>)
+                                    }
+                                </div>
+
+                                {/* imagem */}
+                                <img className='imgProjeto' src={item.banner.replace('DIGOARTHUR','ThomazHilario')} alt="imagem do projeto" />
+                            </a>
+                        )
+                    })
+                }
+            </div>
         </section>
     )
 }
