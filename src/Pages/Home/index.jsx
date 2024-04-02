@@ -1,6 +1,13 @@
+// import css
 import './home.css'
+
+// import cv
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
-import imgIlustrativa from '../../icons/PC.jpg'
+
+// import Components
+import { SobreMim } from '../../Components/sobre';
+
+// import icons
 import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiLinkedin } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
@@ -63,31 +70,6 @@ export default function Home(){
             {/* Contatos */}
             <Contatos/>
         </main>
-    )
-}
-
-//Componente SobreMim
-function SobreMim(){
-    return(
-        <section id='container_sobremim'>
-            <div className='container_titulo'>
-                {/* Titulo */}
-                <h1 className='titulo'>🙂 Sobre mim</h1>
-            </div>
-
-            <div id='container_texto'>
-                {/* Texto de apresentacao */}
-                <article>
-                    <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
-                    <p className='texto-apresentacao'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</p>
-                    <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</p>
-                    <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
-                </article>
-
-                {/* Imagem */}
-                <img src={imgIlustrativa} alt='imagem computador' id='imgIlustrativa'/>
-            </div>
-        </section> 
     )
 }
 

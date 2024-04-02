@@ -114,17 +114,7 @@
     background-color: rgb(55, 15, 90);
 }
 
-/* Sobre mim */
-#container_sobremim{
-    padding-bottom: 40px;
-}
 
-/* container titulo */
-.container_titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #links_pessoais, #plataformasDigitais{
     padding: 10px;
 }
@@ -139,55 +129,6 @@
 #plataformasDigitais > svg{
     cursor: pointer;
 }
-
-
-
-/* titulo sobremim */
-.titulo{
-    color: white;
-
-    text-align: center;
-    font-size: 1.25rem;
-
-    border-radius: 3px;
-
-    background-color: rgba(49, 12, 78, 0.318);
-    width: 200px;
-    padding: 3px;
-}
-
-#container_texto{
-    margin-top: 30px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-/* texto sobre mim*/
-.texto-apresentacao{
-    padding: 10px;
-    font-family: roboto;
-    text-align: justify;
-    font-weight: lighter;
-
-    color: rgba(240, 240, 240, 0.712);
-
-    font-size: 0.9rem;
-
-}
-
-/* imagem ilustrativa*/
-#imgIlustrativa{
-    height: 200px;
-    width: 300px;
-    border-radius: 10%;
-
-    display: none;
-}
-
 
 /* Habilidades css */
 #mySkills{
@@ -437,19 +378,10 @@
         background-color: rgb(106, 47, 157);
     }
 
-
-    #container_texto{
-        height: 250px;
-    }
-
     /* imgIlustrativa */
     #imgIlustrativa{
         width: 350px;
         height: 250px;
-    }
-
-    .texto-apresentacao{
-        font-size: 1.375rem;
     }
 
     /* Habilidades css */
