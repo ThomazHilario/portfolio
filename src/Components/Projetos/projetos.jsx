@@ -132,7 +132,7 @@ export const Projetos = () => {
                         return(
                             <a key={idx} href={item.homepage} target='blank' className='cardProjeto'>
                                 {/* Titulo */}
-                                <h5>{item.name.replace(/(-app|-+)/g,' ')}</h5>
+                                <h1>{item.name.replace(/(-app|-+)/g,' ')}</h1>
 
                                 {/* Descricao */}
                                 <p>{item.description}</p>

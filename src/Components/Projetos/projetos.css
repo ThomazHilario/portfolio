@@ -34,7 +34,7 @@
     background-color: rgba(49, 12, 78, 0.218);
 }
 
-.cardProjeto > h5{
+.cardProjeto > h1{
     font-size: 1.125rem;
     color: white;
     text-align: justify;
