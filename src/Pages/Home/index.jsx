@@ -20,8 +20,8 @@ export default function Home(){
     return(
         <main id='container_main'>
 
-            {/* Container foto */}
-            <section id="container_apresentacao">
+        {/* Container foto */}
+        <section id="container_apresentacao">
 
                 {/* Minha Foto */}
                 <img src={Foto} alt="Imagem de perfil" className='fotoPerfil'/>
@@ -50,7 +50,7 @@ export default function Home(){
                     <SiGithub size={25} color='blueviolet'/>
                     <SiLinkedin size={25} color='blueviolet'/>
                 </div>
-            </section>
+        </section>
 
             {/* Sobre mim */}
             <SobreMim/>
