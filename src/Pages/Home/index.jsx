@@ -33,7 +33,7 @@ export default function Home(){
                         <h1>Thomaz</h1>
                         <h1>Alves</h1>
 
-                        <p>Front-End Developer</p>
+                        <h3>Front-End Developer</h3>
 
                     </div>
                 </article>
