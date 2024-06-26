@@ -20,11 +20,8 @@ export default function Home(){
     return(
         <main id='container_main'>
 
-        {/* Container foto */}
-        <section id="container_apresentacao">
-
-                {/* Minha Foto */}
-                <img src={Foto} alt="Imagem de perfil" className='fotoPerfil'/>
+            {/* Container foto */}
+            <section id="container_apresentacao">
 
                 <article id='container_description'>
 
@@ -36,21 +33,26 @@ export default function Home(){
                         <h3>Front-End Developer</h3>
 
                     </div>
+
+                    <div id='links_pessoais'>
+
+                        <a href={curriculo} target='_blank' rel="noreferrer" id='curriculo' className='links_informacao'>Download CV</a>
+
+
+                        <a href='https://api.whatsapp.com/send?phone=5585988274949' target="_blank" rel="noreferrer" className='links_informacao'>Entrar em Contato</a>
+                    </div>
                 </article>
 
-                <div id='links_pessoais'>
+                <div className='perfil'>
+                    {/* Minha Foto */}
+                    <img src={Foto} alt="Imagem de perfil" className='fotoPerfil'/>
 
-                    <a href={curriculo} target='_blank' rel="noreferrer" id='curriculo' className='links_informacao'>Download CV</a>
-
-
-                    <a href='https://api.whatsapp.com/send?phone=5585988274949' target="_blank" rel="noreferrer" className='links_informacao'>Entrar em Contato</a>
+                    <div id='plataformasDigitais'>
+                        <SiGithub size={25} color='blueviolet'/>
+                        <SiLinkedin size={25} color='blueviolet'/>
+                    </div>
                 </div>
-
-                <div id='plataformasDigitais'>
-                    <SiGithub size={25} color='blueviolet'/>
-                    <SiLinkedin size={25} color='blueviolet'/>
-                </div>
-        </section>
+            </section>
 
             {/* Sobre mim */}
             <SobreMim/>
