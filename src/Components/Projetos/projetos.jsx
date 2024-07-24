@@ -126,7 +126,7 @@ export const Projetos = () => {
                     <h1 className='titulo'>Projetos</h1>
             </div>
 
-            <div id='projetos'>
+            <article id='projetos'>
                 {
                     data.map((item, idx) => {
                         return(
@@ -150,7 +150,7 @@ export const Projetos = () => {
                         )
                     })
                 }
-            </div>
+            </article>
         </section>
     )
 }
