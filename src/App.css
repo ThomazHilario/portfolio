@@ -32,8 +32,8 @@ header{
 @media screen and (min-width:481px){
   header{
     display: flex;
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    top: 0;
   }
 }
 
