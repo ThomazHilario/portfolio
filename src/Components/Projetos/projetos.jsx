@@ -121,10 +121,9 @@ export const Projetos = () => {
 
     return(
         <section id='container_projetos'>
+
             {/* Titulo */}
-            <div className='container_titulo'>
-                    <h1 className='titulo'>Projetos</h1>
-            </div>
+            <h1 className='titulo'>Projetos</h1>   
 
             <article id='projetos'>
                 {

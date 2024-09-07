@@ -7,11 +7,10 @@ import './habilidades.css'
 export const Habilidades = () => {
     return(
         <section id='container_habilidade'>
-            {/* Titulo */}
-            <div className='container_titulo'>
-                <h1 className='titulo'>Habilidades</h1>
-            </div>
 
+            {/* Titulo */}
+            <h1 className='titulo'>Habilidades</h1>
+            
             {/* Habilidades */}
             <div id='mySkills'>
                 <SiHtml5 color='blueviolet' size={70}/>

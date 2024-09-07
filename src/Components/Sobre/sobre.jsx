@@ -4,10 +4,10 @@ import './sobre.css'
 export const SobreMim = () => {
     return(
         <section id='container_sobremim'>
-            <div className='container_titulo'>
-                {/* Titulo */}
-                <h1 className='titulo'>🙂 Sobre mim</h1>
-            </div>
+            
+            {/* Titulo */}
+            <h1 className='titulo'>🙂 Sobre mim</h1>
+            
 
             <div id='container_texto'>
                 {/* Texto de apresentacao */}

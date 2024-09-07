@@ -9,11 +9,10 @@ import './contatos.css'
 export const Contatos = () => {
     return(
         <section id="container_Contatos">
-            {/* Titulo */}
-            <div className='container_titulo'>
-                <h1 className='titulo'>Contatos</h1>
-            </div>
 
+            {/* Titulo */}  
+            <h1 className='titulo'>Contatos</h1>
+            
             <div id='contatos'>
                 <a className='linkSocial' href='mailto:thomazhilario5@gmail.com' target='blank'>
                     <HiOutlineMail color='blueviolet' size={50}/>
