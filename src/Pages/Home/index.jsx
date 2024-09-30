@@ -48,8 +48,8 @@ export default function Home(){
                     <img src={Foto} alt="Imagem de perfil" className='fotoPerfil'/>
 
                     <div id='plataformasDigitais'>
-                        <SiGithub size={25} color='blueviolet'/>
-                        <SiLinkedin size={25} color='blueviolet'/>
+                        <a href='https://github.com/ThomazHilario' target='blank'><SiGithub size={25} color='blueviolet'/></a>
+                        <a href='https://www.linkedin.com/in/thomazalvesdev/' target='blank'><SiLinkedin size={25} color='blueviolet'/></a>
                     </div>
                 </div>
             </section>
