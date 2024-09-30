@@ -13,8 +13,7 @@
 /* media screen and (min-width:768px) */
 @media screen and (min-width:768px){
     #mySkills{
-        display: grid;
-        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-columns: repeat(5, 100px)
     }
 }
 

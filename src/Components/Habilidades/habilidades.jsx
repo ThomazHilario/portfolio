@@ -1,10 +1,16 @@
 // import icons
-import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript } from "react-icons/si"
+import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiJest, SiVitest } from "react-icons/si"
 
 // import css
 import './habilidades.css'
 
 export const Habilidades = () => {
+
+    const propsIcons = {
+        color:'blueviolet',
+        size:70
+    }
+
     return(
         <section id='container_habilidade'>
 
@@ -13,14 +19,16 @@ export const Habilidades = () => {
             
             {/* Habilidades */}
             <div id='mySkills'>
-                <SiHtml5 color='blueviolet' size={70}/>
-                <SiCss3 color='blueviolet' size={70}/>
-                <SiJavascript color='blueviolet' size={70}/>
-                <SiTypescript color='blueviolet' size={70}/>
-                <SiReact color='blueviolet' size={70}/>
-                <SiTailwindcss color='blueviolet' size={70}/>
-                <SiGit color='blueviolet' size={70}/>
-                <SiGithub color='blueviolet' size={70}/>
+                <SiHtml5 {...propsIcons} />
+                <SiCss3 {...propsIcons} />
+                <SiJavascript {...propsIcons} />
+                <SiTypescript {...propsIcons} />
+                <SiReact {...propsIcons}/>
+                <SiTailwindcss {...propsIcons} />
+                <SiJest {...propsIcons}/>
+                <SiVitest {...propsIcons} />
+                <SiGit {...propsIcons} />
+                <SiGithub {...propsIcons} />
             </div>
         </section>
     )
