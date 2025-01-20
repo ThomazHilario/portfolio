@@ -1,0 +1,14 @@
+/* carreira section container */
+#carreira__article__container{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    /* Lista com experiencias profissionais e acadêmicas */
+    ul{
+        list-style: none;
+    }
+}
