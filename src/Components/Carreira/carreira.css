@@ -6,9 +6,5 @@
     color: white;
     flex-wrap: wrap;
     gap: 1rem;
-
-    /* Lista com experiencias profissionais e acadêmicas */
-    ul{
-        list-style: none;
-    }
+    
 }
