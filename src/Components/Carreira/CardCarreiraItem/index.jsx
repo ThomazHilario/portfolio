@@ -3,7 +3,7 @@ import './card-carreira-item.css'
 
 export const CardCarreiraItem = ({Title, Description, Date, isActive}) => {
     return(
-        <li className='item__carreira' style={{borderColor:isActive ? '#4ae2917e' : 'rgba(81, 21, 127, 0.318)' }}>
+        <li className='item__carreira' style={{borderColor:isActive ? '#4ae2919a' : 'rgba(81, 21, 127, 0.318)' }}>
             {/* Titulo */}
             <h3>{Title}</h3>
 

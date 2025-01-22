@@ -29,9 +29,16 @@ export const Carreira = () => {
                 <SectionContentCarreira titulo='Acadêmico'>
 
                     <CardCarreiraItem
+                        Title='Tecnólogo | Desenvolvimento FullStack (Estácio)'
+                        Description='Atualmente estou cursando Desenvolvimento FullStack na Instituição Estácio de Sá.'
+                        Date='Fevereiro / 2023 - Em andamento'
+                        isActive={true}
+                    />
+
+                    <CardCarreiraItem
                         Title='Básico | Ensino Médio Completo'
                         Description='Ao final de 2023 me formei no ensino médio na instituição Colégio Cascavelense.'
-                        Date='Janeiro / 2020 - Dezembro / 2023'
+                        Date='Janeiro / 2020 - Dezembro / 2022'
                         isActive={false}
                     />
 
