@@ -7,7 +7,7 @@ import './carreira.css'
 
 export const Carreira = () => {
     return(
-        <section>
+        <section id='container__carreira'>
             {/* Titulo */}
             <h1 className="titulo">💼 Carreira</h1>
 

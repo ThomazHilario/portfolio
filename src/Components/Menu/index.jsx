@@ -2,6 +2,12 @@
 import { gsap } from "gsap";
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
+// Icons
+import { FiMenu } from "react-icons/fi";
+
+// Css
+import './menu.css'
+
 export const Menu = () => {
 
     // Return Gsap Props
@@ -35,6 +41,11 @@ export const Menu = () => {
             gsap.to(window, returnGsapProps(1, '#container_projetos', 100))
         }
 
+        // Caso o texto do button seja Carreira
+        if(text === 'Carreira'){
+            gsap.to(window, returnGsapProps(1,'#container__carreira', 100))
+        }
+
         // Caso o texto do button seja Contatos
         if(text === 'Contatos'){
             gsap.to(window, returnGsapProps(1, '#container_Contatos', 100))
@@ -45,14 +56,18 @@ export const Menu = () => {
     }
 
     return(
-        <div id='container_menu_desktop'>
+        <nav id='container_menu_desktop'>
+
+            <FiMenu color="white" size={30}/>
+
             <menu id='menu_desktop'>
                 <button onClick={(e) => scrollSection(e.target.textContent)}>Sobre</button>
                 <button onClick={(e) => scrollSection(e.target.textContent)}>Habilidades</button>
                 <button onClick={(e) => scrollSection(e.target.textContent)}>Projetos</button>
+                <button onClick={(e) => scrollSection(e.target.textContent)}>Carreira</button>
                 <button onClick={(e) => scrollSection(e.target.textContent)}>Contatos</button>
             </menu>
-        </div>
+        </nav>
     )
     
 }

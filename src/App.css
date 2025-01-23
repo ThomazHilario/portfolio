@@ -11,41 +11,10 @@ header{
   border-bottom: 1px solid rgba(93, 43, 146, 0.375);
 }
 
-/* menu desktop*/
-#menu_desktop{
-  display: flex;
-  gap: 20px;
-
-  transition: 0.7s;
-}
-
-#menu_desktop > button{
-  text-decoration: none;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: transparent;
-  border: 0px;
-  cursor: pointer;
-}
-
-
 @media screen and (min-width:481px){
   header{
     display: flex;
     position: sticky;
     top: 0;
-  }
-}
-
-@media screen and (min-width:768px){
-
-  /* Alterando o gap */
-  #menu_desktop{
-    gap: 40px;
-  }
-
-  /* Alterando a font dos buttons */
-  #menu_desktop > button{
-    font-size: 20px;
   }
 }
