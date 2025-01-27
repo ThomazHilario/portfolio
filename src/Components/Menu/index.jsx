@@ -2,8 +2,8 @@
 import { gsap } from "gsap";
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
-// Icons
-import { FiMenu } from "react-icons/fi";
+// Components
+import { MenuMobile } from "./menu-mobile";
 
 // Css
 import './menu.css'
@@ -58,7 +58,8 @@ export const Menu = () => {
     return(
         <nav id='container_menu_desktop'>
 
-            <FiMenu color="white" size={30}/>
+            {/* Menu Mobile */}
+            <MenuMobile scrollSection={scrollSection}/>
 
             <menu id='menu_desktop'>
                 <button onClick={(e) => scrollSection(e.target.textContent)}>Sobre</button>

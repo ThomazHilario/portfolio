@@ -1,11 +1,4 @@
 #container_menu_desktop{
-    svg{
-        display: block;
-
-        @media screen and (min-width:360px){
-            display: none;
-        }
-    }
 
     /* menu desktop*/
     #menu_desktop {

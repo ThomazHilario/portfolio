@@ -2,6 +2,8 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
 
   height: 10vh;
   padding: 0px 10px;
@@ -9,12 +11,4 @@ header{
   background-color: #0C0F17;
 
   border-bottom: 1px solid rgba(93, 43, 146, 0.375);
-}
-
-@media screen and (min-width:481px){
-  header{
-    display: flex;
-    position: sticky;
-    top: 0;
-  }
 }
