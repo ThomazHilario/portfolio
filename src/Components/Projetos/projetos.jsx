@@ -25,11 +25,11 @@ export const Projetos = () => {
                                 <p>{item.description}</p>
 
                                 {/* Tecnologias usadas */}
-                                <div className='container_skills'>
+                                <section className='container_skills'>
                                     {
                                         item.topics.filter(item => item !== 'deployed').map((item,idx) => <span key={idx}>{item[0].toUpperCase() + item.substring(1)}</span>)
                                     }
-                                </div>
+                                </section>
 
                                 {/* imagem */}
                                 <img className='imgProjeto' src={item.banner.replace('DIGOARTHUR','ThomazHilario')} alt="imagem do projeto" />
