@@ -27,7 +27,12 @@ export const Projetos = () => {
                                 {/* Tecnologias usadas */}
                                 <section className='container_skills'>
                                     {
-                                        item.topics.filter(item => item !== 'deployed').map((item,idx) => <span key={idx}>{item[0].toUpperCase() + item.substring(1)}</span>)
+                                        item.topics.filter(item => item !== 'deployed').map((item,idx) => (
+                                                <span key={idx}>
+                                                    {item[0].toUpperCase() + item.substring(1)}
+                                                </span>
+                                            )
+                                        )
                                     }
                                 </section>
 
