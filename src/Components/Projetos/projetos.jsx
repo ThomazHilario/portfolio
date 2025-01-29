@@ -1,5 +1,8 @@
 import { useGitHubAutomatedRepos } from 'github-automated-repos'
 
+// Components
+import { CardProjetos } from './CardProjetos'
+
 // import css
 import './projetos.css'
 
@@ -17,28 +20,14 @@ export const Projetos = () => {
                 {
                     data.map((item, idx) => {
                         return(
-                            <a key={idx} href={item.homepage} target='blank' className='cardProjeto'>
-                                {/* Titulo */}
-                                <h1>{item.name.replace(/(-app|-+)/g,' ')}</h1>
-
-                                {/* Descricao */}
-                                <p>{item.description}</p>
-
-                                {/* Tecnologias usadas */}
-                                <section className='container_skills'>
-                                    {
-                                        item.topics.filter(item => item !== 'deployed').map((item,idx) => (
-                                                <span key={idx}>
-                                                    {item[0].toUpperCase() + item.substring(1)}
-                                                </span>
-                                            )
-                                        )
-                                    }
-                                </section>
-
-                                {/* imagem */}
-                                <img className='imgProjeto' src={item.banner.replace('DIGOARTHUR','ThomazHilario')} alt="imagem do projeto" />
-                            </a>
+                            <CardProjetos
+                                key={idx}
+                                homepage={item.homepage}
+                                title={item.name.replace(/(-app|-+)/g,' ')}
+                                description={item.description}
+                                topics={item.topics.filter(item => item !== 'deployed')}
+                                banner={item.banner.replace('DIGOARTHUR','ThomazHilario')}
+                            />
                         )
                     })
                 }
