@@ -17,8 +17,8 @@ export const Habilidades = () => {
             {/* Titulo */}
             <h1 className='titulo'>Habilidades</h1>
             
-            {/* Habilidades */}
-            <div id='mySkills'>
+            {/* Seção de habilidades */}
+            <section id='mySkills'>
                 <SiHtml5 {...propsIcons} />
                 <SiCss3 {...propsIcons} />
                 <SiJavascript {...propsIcons} />
@@ -29,7 +29,7 @@ export const Habilidades = () => {
                 <SiVitest {...propsIcons} />
                 <SiGit {...propsIcons} />
                 <SiGithub {...propsIcons} />
-            </div>
+            </section>
         </section>
     )
 }
