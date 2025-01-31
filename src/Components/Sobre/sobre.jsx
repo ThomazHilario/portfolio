@@ -9,7 +9,7 @@ export const SobreMim = () => {
             <h1 className='titulo'>🙂 Sobre mim</h1>
             
 
-            <div id='container_texto'>
+            <section id='container_texto'>
                 {/* Texto de apresentacao */}
                 <article>
                     <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
@@ -17,7 +17,7 @@ export const SobreMim = () => {
                     <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</p>
                     <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
                 </article>
-            </div>
+            </section>
         </section> 
     )
 }
