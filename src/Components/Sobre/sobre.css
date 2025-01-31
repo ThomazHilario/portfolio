@@ -1,37 +1,35 @@
 /* Sobre mim */
 #container_sobremim{
     padding-bottom: 40px;
-}
 
-#container_texto{
-    margin-top: 30px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-.texto-apresentacao{
-    padding: 10px;
-    font-family: roboto;
-    text-align: justify;
-    font-weight: lighter;
-
-    color: rgba(240, 240, 240, 0.712);
-
-    font-size: 0.9rem;
-
-}
-
-/* media screen and (max-width:1024px) */
-@media screen and (min-width:1024px){
     #container_texto{
-        height: 250px;
-    }
+        margin-top: 30px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
 
-    .texto-apresentacao{
-        font-size: 1.375rem;
+        /* Texto apresentação */
+        .texto-apresentacao{
+            padding: 10px;
+            font-family: roboto;
+            text-align: justify;
+            font-weight: lighter;
+        
+            color: rgba(240, 240, 240, 0.712);
+        
+            font-size: 0.9rem;
+        
+        }
+
+        @media screen and (min-width:1024px){
+            height: 250px;
+        
+            .texto-apresentacao{
+                font-size: 1.375rem;
+            }
+        }
     }
 }
