@@ -7,6 +7,198 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0C0F17;
     height: auto;
+
+    /* Container apresentacao */
+    #container_apresentacao{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        /* container_description */
+        #container_description{
+            
+            text-align: justify;
+            color: white;
+            font-family: roboto;
+
+            /* Seção de Apresentacao */
+            #apresentacao{
+                font-family: "Montserrat", sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                line-height: 25px;
+                padding: 0px 5px;
+                margin-bottom: 10px;
+
+                /* Titulo da seção */
+                h1{
+                    font-size: 2.85rem;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                    color: white;
+
+                    /* h1 style for media querie 481px */
+                    @media screen and (min-width:481px){
+                        font-size: 2.9rem;
+                        line-height: 35px;
+                    }
+                }
+
+                /* Titulo do cargo */
+                h3{
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    color: rgba(240, 240, 240, 0.712);
+                    margin-bottom: 10px;
+                }
+
+                /* Screen min width 481px */
+                @media screen and (min-width:481px){
+                    align-items: start;
+                    margin-top: 3rem;
+                }
+            }
+
+            /* container links pessoais */
+            #links_pessoais{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                /* Curriculo */
+                #curriculo{
+                    background-color: rgb(55, 15, 90);
+                }
+
+                /* link do meu curriculo */
+                .links_informacao{
+                    text-decoration: none;
+                    font-family: roboto;
+                    font-size: 0.8rem;
+
+                    border-radius: 20px;
+                    border: 1px solid rgb(95, 55, 125);
+                    box-shadow: 0px 0px 10px rgb(49, 12, 78);
+                    padding: 8px 10px;
+
+                    color: rgba(255, 255, 255, 0.822);
+
+                    transition: 0.7s;
+
+                    /* Style links pessoais in min width 1024px */
+                    @media screen and (min-width:1024px){
+                        padding: 10px 20px;
+                    
+                        &:hover{
+                            padding: 10px 10px;
+                            transition: 0.7s;
+                    
+                            background-color: rgb(106, 47, 157);
+                        }
+                    }
+                }
+                
+                /* Screen min width 481px */
+                @media screen and (min-width:481px){
+                    justify-content: start;
+                    gap: 10px;
+                }
+            }
+            
+            @media screen and (min-width:481px){
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+
+        /* perfil */
+        .perfil{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            /* Foto de perfil */
+            .fotoPerfil{
+                height: 210px;
+                width: 210px;
+                border-radius: 50%;
+                border: 3px solid black;
+                margin: auto;
+            
+                transition: 0.7s;
+                object-fit: cover;
+
+                /* Foto de perfil style in 481px */
+                @media screen and (min-width:481px){
+                    height: 180px;
+                    width: 180px;
+                    display: block;
+                }
+
+                /* Foto de perfil style in 768px */
+                @media screen and (min-width:768px){
+                    height: 220px;
+                    width: 220px;
+                    
+                
+                    &:hover{
+                        height: 240px;
+                        width: 240px;
+                    }
+                }
+            }
+
+            #plataformasDigitais{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                & > svg{
+                    cursor: pointer;
+                }
+
+                @media screen and (min-width:481px){
+                    width: 210px;
+                }
+
+                @media screen and (min-width:768px){
+                    width: auto;
+                }
+            }
+
+            @media screen and (min-width:481px){
+                height: 100%;
+                justify-content: space-between;
+            }
+        }
+        
+        /* min width 481px */
+        @media screen and (min-width:481px) {
+            height:270px;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        /* min width 768px */
+        @media screen and (min-width:768px){
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
 }
 
 /* Config global */
@@ -26,209 +218,21 @@
     padding: 3px;
 }
 
-
-/* Container apresentacao */
-#container_apresentacao{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-/* perfil */
-.perfil{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-
-.fotoPerfil{
-    height: 210px;
-    width: 210px;
-    border-radius: 50%;
-    border: 3px solid black;
-    margin: auto;
-
-    transition: 0.7s;
-    object-fit: cover;
-}
-
-/* container_description */
-#container_description{
-    
-    text-align: justify;
-    color: white;
-    font-family: roboto;
-}
-
-/* apresentacao */
-#apresentacao{
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 25px;
-    padding: 0px 5px;
-    margin-bottom: 10px;
-}
-
-/* apresentacao titulo */
-#apresentacao h1{
-    font-size: 2.85rem;
-    line-height: 30px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-/* cargo */
-#apresentacao h3{
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: rgba(240, 240, 240, 0.712);
-    margin-bottom: 10px;
-}
-
-/* container links pessoais */
-#links_pessoais{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-/* link do meu curriculo */
-.links_informacao{
-    text-decoration: none;
-    font-family: roboto;
-    font-size: 0.8rem;
-
-    border-radius: 20px;
-    border: 1px solid rgb(95, 55, 125);
-    box-shadow: 0px 0px 10px rgb(49, 12, 78);
-    padding: 8px 10px;
-
-    color: rgba(255, 255, 255, 0.822);
-
-    transition: 0.7s;
-}
 /* whatssap_link */
 .whatssap_link{
     text-decoration: none;
 }
 
-#curriculo{
-    background-color: rgb(55, 15, 90);
-}
-
-#plataformasDigitais{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-#plataformasDigitais > svg{
-    cursor: pointer;
-}
-
 /* width 481px */
 @media screen and (min-width:481px){
-    /* container_apresentacao */
-    #container_apresentacao{
-        height:270px;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 20px;
-    }
-
-    #apresentacao{
-        align-items: start;
-        margin-top: 3rem;
-    }
-
-    /* h1 da apresentacao */
-    #apresentacao h1{
-        font-size: 2.9rem;
-        line-height: 35px;
-    }
 
     /* p da apresentacao */
     #apresentacao p{
         margin-bottom: 0px;
     }
-
-    /* foto de perfil*/
-    .fotoPerfil{
-        height: 180px;
-        width: 180px;
-        display: block;
-    }
-
-    #links_pessoais{
-        justify-content: start;
-        gap: 10px;
-    }
-
-    #plataformasDigitais{
-        width: 210px;
-    }
-
-    #container_description{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .perfil{
-        height: 100%;
-        justify-content: space-between;
-    }
-}
-
-/* width 768px */
-@media screen and (min-width:768px) {
-
-    /* container Apresentacao*/
-    #container_apresentacao{
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .fotoPerfil{
-        height: 220px;
-        width: 220px;
-    }
-
-    .fotoPerfil:hover{
-        height: 240px;
-        width: 240px;
-    }
-
-    #plataformasDigitais{
-        width: auto;
-    }
 }
 
 @media screen and (min-width:1024px){
-    .links_informacao{
-        padding: 10px 20px;
-    }
-
-    .links_informacao:hover{
-        padding: 10px 10px;
-        transition: 0.7s;
-
-        background-color: rgb(106, 47, 157);
-    }
 
     /* imgIlustrativa */
     #imgIlustrativa{
