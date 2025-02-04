@@ -222,21 +222,3 @@
 .whatssap_link{
     text-decoration: none;
 }
-
-/* width 481px */
-@media screen and (min-width:481px){
-
-    /* p da apresentacao */
-    #apresentacao p{
-        margin-bottom: 0px;
-    }
-}
-
-@media screen and (min-width:1024px){
-
-    /* imgIlustrativa */
-    #imgIlustrativa{
-        width: 350px;
-        height: 250px;
-    }
-}
