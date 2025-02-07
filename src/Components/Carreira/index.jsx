@@ -17,6 +17,13 @@ export const Carreira = () => {
                 <SectionContentCarreira titulo='Profissional'>
 
                     <CardCarreiraItem
+                        Title='Compass Uol | Programador - Trainee'
+                        Description='Atualmente estou trabalhando como Programador trainee na Compass em soluções Front-End e Back-End.'
+                        Date='Fevereiro / 2025 - Até hoje'
+                        isActive={true}
+                    />
+
+                    <CardCarreiraItem
                         Title='Compass Uol (Estagiário) | Desenvolvedor FullStack React & NodeJs'
                         Description='Atuei como estagiário na Compass UOL, onde adquiri conhecimentos em Desenvolvimento Front-End com React e Desenvolvimento Back-End com NestJS. Durante o estágio, desenvolvi projetos, como um e-commerce, aplicando as tecnologias aprendidas.'
                         Date='Junho / 2024 - Novembro / 2024'
