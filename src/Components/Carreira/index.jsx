@@ -2,10 +2,15 @@
 import { CardCarreiraItem } from './CardCarreiraItem'
 import { SectionContentCarreira } from './SectionContentCarreira'
 
+// Mock
+import mock from '../../Mocks/carreira.json'
+
 // Css
 import './carreira.css'
 
 export const Carreira = () => {
+    const { academico, profissional } = mock
+
     return(
         <section id='container__carreira'>
             {/* Titulo */}
@@ -16,39 +21,29 @@ export const Carreira = () => {
                 {/* Carreira Profissional */}
                 <SectionContentCarreira titulo='Profissional'>
 
-                    <CardCarreiraItem
-                        Title='Compass Uol | Programador - Trainee'
-                        Description='Atualmente estou trabalhando como Programador trainee na Compass em soluções Front-End e Back-End.'
-                        Date='Fevereiro / 2025 - Até hoje'
-                        isActive={true}
-                    />
-
-                    <CardCarreiraItem
-                        Title='Compass Uol (Estagiário) | Desenvolvedor FullStack React & NodeJs'
-                        Description='Atuei como estagiário na Compass UOL, onde adquiri conhecimentos em Desenvolvimento Front-End com React e Desenvolvimento Back-End com NestJS. Durante o estágio, desenvolvi projetos, como um e-commerce, aplicando as tecnologias aprendidas.'
-                        Date='Junho / 2024 - Novembro / 2024'
-                        isActive={false}
-                    />
+                    {profissional.map((item, index) => (
+                        <CardCarreiraItem
+                            key={index}
+                            Title={item.title}
+                            Description={item.description}
+                            Date={item.date}
+                            isActive={item.isActive}
+                        />
+                    ))}
 
                 </SectionContentCarreira>
 
                 {/* Carreira Acadêmica */}
                 <SectionContentCarreira titulo='Acadêmico'>
-
-                    <CardCarreiraItem
-                        Title='Tecnólogo | Desenvolvimento FullStack (Estácio)'
-                        Description='Atualmente estou cursando Desenvolvimento FullStack na Instituição Estácio de Sá.'
-                        Date='Fevereiro / 2023 - Em andamento'
-                        isActive={true}
-                    />
-
-                    <CardCarreiraItem
-                        Title='Básico | Ensino Médio Completo'
-                        Description='Ao final de 2023 me formei no ensino médio na instituição Colégio Cascavelense.'
-                        Date='Janeiro / 2020 - Dezembro / 2022'
-                        isActive={false}
-                    />
-
+                    {academico.map((item, index) => (
+                        <CardCarreiraItem
+                            key={index}
+                            Title={item.title}
+                            Description={item.description}
+                            Date={item.date}
+                            isActive={item.isActive}
+                        />
+                    ))}
                 </SectionContentCarreira>
             </article>
         </section>

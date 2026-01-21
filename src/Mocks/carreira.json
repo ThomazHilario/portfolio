@@ -1,0 +1,30 @@
+{
+    "academico":[
+        {
+            "title":"Tecnólogo | Desenvolvimento FullStack (Estácio)",
+            "description":"Atualmente estou cursando Desenvolvimento FullStack na Instituição Estácio de Sá.",
+            "date":"Fevereiro / 2023 - Junho / 2025",
+            "isActive": false
+        },
+        {
+            "title":"Básico | Ensino Médio Completo",
+            "description":"Ao final de 2023 me formei no ensino médio na instituição Colégio Cascavelense.",
+            "date":"Janeiro / 2020 - Dezembro / 2022",
+            "isActive": false
+        }
+    ],
+    "profissional":[
+        {
+            "title":"Compass Uol | Programador - Trainee",
+            "description":"Atualmente estou trabalhando como Programador trainee na Compass em soluções Front-End e Back-End.",
+            "date":"Fevereiro / 2025 - Até hoje",
+            "isActive": true
+        },
+        {
+            "title":"Compass Uol (Estagiário) | Desenvolvedor FullStack React & NodeJs",
+            "description":"Atuei como estagiário na Compass UOL, onde adquiri conhecimentos em Desenvolvimento Front-End com React e Desenvolvimento Back-End com NestJS. Durante o estágio, desenvolvi projetos, como um e-commerce, aplicando as tecnologias aprendidas.",
+            "date":"Junho / 2024 - Novembro / 2024",
+            "isActive": false
+        }
+    ]
+}
