@@ -1,6 +1,9 @@
 // Components
+import { ScaleFadeIn } from '../Animations/ScaleFadeIn'
 import { CardCarreiraItem } from './CardCarreiraItem'
 import { SectionContentCarreira } from './SectionContentCarreira'
+
+import { motion } from 'framer-motion'
 
 // Mock
 import mock from '../../Mocks/carreira.json'
@@ -12,7 +15,7 @@ export const Carreira = () => {
     const { academico, profissional } = mock
 
     return(
-        <section id='container__carreira'>
+        <ScaleFadeIn id='container__carreira' position="left">
             {/* Titulo */}
             <h1 className="titulo">💼 Carreira</h1>
 
@@ -46,6 +49,6 @@ export const Carreira = () => {
                     ))}
                 </SectionContentCarreira>
             </article>
-        </section>
+        </ScaleFadeIn>
     )
 }

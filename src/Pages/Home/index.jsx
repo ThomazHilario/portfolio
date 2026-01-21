@@ -4,7 +4,8 @@ import './home.css'
 // import cv
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 
-// import Components
+// Components
+import { ScaleFadeIn } from '../../Components/Animations/ScaleFadeIn';
 import { SobreMim } from '../../Components/Sobre/sobre';
 import { Habilidades } from '../../Components/Habilidades/habilidades';
 import { Projetos } from '../../Components/Projetos/projetos';

@@ -1,3 +1,6 @@
+// Components
+import { ScaleFadeIn } from "../Animations/ScaleFadeIn"
+
 // import icons
 import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiJest, SiVitest } from "react-icons/si"
 
@@ -12,7 +15,7 @@ export const Habilidades = () => {
     }
 
     return(
-        <section id='container_habilidade'>
+        <ScaleFadeIn id='container_habilidade' position="left">
 
             {/* Titulo */}
             <h1 className='titulo'>Habilidades</h1>
@@ -30,6 +33,6 @@ export const Habilidades = () => {
                 <SiGit {...propsIcons} />
                 <SiGithub {...propsIcons} />
             </section>
-        </section>
+        </ScaleFadeIn>
     )
 }

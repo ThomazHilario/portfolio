@@ -5,13 +5,14 @@ import { CardProjetos } from './CardProjetos'
 
 // import css
 import './projetos.css'
+import { ScaleFadeIn } from '../Animations/ScaleFadeIn'
 
 export const Projetos = () => {
     // Buscando meus projetos
     const data = useGitHubAutomatedRepos('ThomazHilario','deployed')
 
     return(
-        <section id='container_projetos'>
+        <ScaleFadeIn id='container_projetos' position="right" amountValue={window.innerWidth < 768 ? 0 : 0.25}>
 
             {/* Titulo */}
             <h1 className='titulo'>Projetos</h1>   
@@ -32,6 +33,6 @@ export const Projetos = () => {
                     })
                 }
             </article>
-        </section>
+        </ScaleFadeIn>
     )
 }

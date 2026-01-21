@@ -5,10 +5,11 @@ import { FiPhone } from "react-icons/fi";
 
 // import css
 import './contatos.css'
+import { ScaleFadeIn } from "../Animations/ScaleFadeIn";
 
 export const Contatos = () => {
     return(
-        <section id="container_Contatos">
+        <ScaleFadeIn id="container_Contatos" position="right">
 
             {/* Titulo */}  
             <h1 className='titulo'>Contatos</h1>
@@ -46,6 +47,6 @@ export const Contatos = () => {
                     </a>
                 </li>
             </ul>
-        </section>
+        </ScaleFadeIn>
     )
 }

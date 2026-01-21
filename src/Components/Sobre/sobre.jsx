@@ -1,9 +1,12 @@
+// Components
+import { ScaleFadeIn } from '../Animations/ScaleFadeIn'
+
 // import css
 import './sobre.css'
 
 export const SobreMim = () => {
     return(
-        <section id='container_sobremim'>
+        <ScaleFadeIn id='container_sobremim' position="right">
             
             {/* Titulo */}
             <h1 className='titulo'>🙂 Sobre mim</h1>
@@ -18,6 +21,6 @@ export const SobreMim = () => {
                     <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
                 </article>
             </section>
-        </section> 
+        </ScaleFadeIn> 
     )
 }
