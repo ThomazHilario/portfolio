@@ -10,6 +10,7 @@ import mock from '../../Mocks/carreira.json'
 
 // Css
 import './carreira.css'
+import { Container } from '../Container'
 
 export const Carreira = () => {
     const { academico, profissional } = mock
@@ -19,36 +20,38 @@ export const Carreira = () => {
             {/* Titulo */}
             <h1 className="titulo">💼 Carreira</h1>
 
-            {/* Lista de experiências profissionais */}
-            <article id="carreira__article__container">
-                {/* Carreira Profissional */}
-                <SectionContentCarreira titulo='Profissional'>
+            <Container>
+                {/* Lista de experiências profissionais */}
+                <article id="carreira__article__container">
+                    {/* Carreira Profissional */}
+                    <SectionContentCarreira titulo='Profissional'>
 
-                    {profissional.map((item, index) => (
-                        <CardCarreiraItem
-                            key={index}
-                            Title={item.title}
-                            Description={item.description}
-                            Date={item.date}
-                            isActive={item.isActive}
-                        />
-                    ))}
+                        {profissional.map((item, index) => (
+                            <CardCarreiraItem
+                                key={index}
+                                Title={item.title}
+                                Description={item.description}
+                                Date={item.date}
+                                isActive={item.isActive}
+                            />
+                        ))}
 
-                </SectionContentCarreira>
+                    </SectionContentCarreira>
 
-                {/* Carreira Acadêmica */}
-                <SectionContentCarreira titulo='Acadêmico'>
-                    {academico.map((item, index) => (
-                        <CardCarreiraItem
-                            key={index}
-                            Title={item.title}
-                            Description={item.description}
-                            Date={item.date}
-                            isActive={item.isActive}
-                        />
-                    ))}
-                </SectionContentCarreira>
-            </article>
+                    {/* Carreira Acadêmica */}
+                    <SectionContentCarreira titulo='Acadêmico'>
+                        {academico.map((item, index) => (
+                            <CardCarreiraItem
+                                key={index}
+                                Title={item.title}
+                                Description={item.description}
+                                Date={item.date}
+                                isActive={item.isActive}
+                            />
+                        ))}
+                    </SectionContentCarreira>
+                </article>
+            </Container>
         </ScaleFadeIn>
     )
 }

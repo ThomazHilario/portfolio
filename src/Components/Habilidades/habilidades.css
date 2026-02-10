@@ -1,8 +1,5 @@
 /* Habilidades css */
 #mySkills{
-    padding: 40px;
-    margin-top: 30px;
-
     display: grid;
     grid-template-columns: 50px 65px;
     justify-content: space-evenly;

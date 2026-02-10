@@ -1,4 +1,5 @@
 // Components
+import { Container } from "../Container"
 import { ScaleFadeIn } from "../Animations/ScaleFadeIn"
 
 // import icons
@@ -19,20 +20,21 @@ export const Habilidades = () => {
 
             {/* Titulo */}
             <h1 className='titulo'>Habilidades</h1>
-            
-            {/* Seção de habilidades */}
-            <section id='mySkills'>
-                <SiHtml5 {...propsIcons} />
-                <SiCss3 {...propsIcons} />
-                <SiJavascript {...propsIcons} />
-                <SiTypescript {...propsIcons} />
-                <SiReact {...propsIcons}/>
-                <SiTailwindcss {...propsIcons} />
-                <SiJest {...propsIcons}/>
-                <SiVitest {...propsIcons} />
-                <SiGit {...propsIcons} />
-                <SiGithub {...propsIcons} />
-            </section>
+            <Container dataAttribute="horizontal-padding">
+                {/* Seção de habilidades */}
+                <section id='mySkills'>
+                    <SiHtml5 {...propsIcons} />
+                    <SiCss3 {...propsIcons} />
+                    <SiJavascript {...propsIcons} />
+                    <SiTypescript {...propsIcons} />
+                    <SiReact {...propsIcons}/>
+                    <SiTailwindcss {...propsIcons} />
+                    <SiJest {...propsIcons}/>
+                    <SiVitest {...propsIcons} />
+                    <SiGit {...propsIcons} />
+                    <SiGithub {...propsIcons} />
+                </section>
+            </Container>    
         </ScaleFadeIn>
     )
 }

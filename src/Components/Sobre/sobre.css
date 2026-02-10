@@ -1,9 +1,6 @@
 /* Sobre mim */
-#container_sobremim{
-    padding-bottom: 40px;
-
+#container_sobremim {
     #container_texto{
-        margin-top: 30px;
         padding: 5px;
         display: flex;
         flex-direction: column-reverse;

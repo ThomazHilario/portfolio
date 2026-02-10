@@ -1,0 +1,11 @@
+#container {
+    margin-top: 4rem;
+}
+
+#container[data-container="horizontal-padding"] {
+    padding: 0 40px;
+}
+
+#container[data-container="vertical-padding"] {
+    padding: 40px 0;
+}
