@@ -5,18 +5,13 @@ import './home.css'
 import curriculo from '../../assets/Curriculo Thomaz Hilário.pdf'
 
 // Components
-import { SobreMim } from '../../Components/Sobre/sobre';
-import { Habilidades } from '../../Components/Habilidades/habilidades';
-import { Projetos } from '../../Components/Projetos/projetos';
-import { Carreira } from '../../Components/Carreira';
-import { Contatos } from '../../Components/Contatos/contatos';
+import { Container, SobreMim, Habilidades, Projetos, Carreira, Contatos } from '../../Components/index.js'
 
 // import icons
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
 // Foto de perfil
 import Foto from '../../assets/foto.png'
-import { Container } from '../../Components/Container';
 
 export default function Home(){
     return(

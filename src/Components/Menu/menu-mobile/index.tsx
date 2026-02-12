@@ -7,8 +7,14 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 // Css
 import './menu-mobile.css'
+import { MENU_OPTIONS } from '../Menu.js';
 
-export const MenuMobile = ({scrollSection}) => {
+// type
+type MenuMobileProps = {
+    scrollSection: (text: string) => void;
+}
+
+export const MenuMobile = ({scrollSection}: MenuMobileProps) => {
     return(
         <Dialog.Root>
             <Dialog.Trigger id='icon__menu'>
@@ -36,25 +42,11 @@ export const MenuMobile = ({scrollSection}) => {
 
 
                     <menu>
-                        <Dialog.Close onClick={(e) => scrollSection(e.target.textContent)}>
-                            Sobre
-                        </Dialog.Close>
-
-                        <Dialog.Close onClick={(e) => scrollSection(e.target.textContent)}>
-                            Habilidades
-                        </Dialog.Close>
-
-                        <Dialog.Close onClick={(e) => scrollSection(e.target.textContent)}>
-                            Projetos
-                        </Dialog.Close>
-
-                        <Dialog.Close onClick={(e) => scrollSection(e.target.textContent)}>
-                            Carreira
-                        </Dialog.Close>
-                        
-                        <Dialog.Close onClick={(e) => scrollSection(e.target.textContent)}>
-                            Contatos
-                        </Dialog.Close>
+                        {MENU_OPTIONS.map((option) => (
+                            <Dialog.Close key={option.id} onClick={() => scrollSection(option.name)}>
+                                {option.name}
+                            </Dialog.Close>
+                        ))}
                     </menu>
                 </Dialog.Content>
             
