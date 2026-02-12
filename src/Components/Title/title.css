@@ -1,0 +1,14 @@
+.titulo {
+    margin: auto;
+
+    color: white;
+    background-color: rgba(49, 12, 78, 0.318);
+
+    text-align: center;
+    font-size: 1.25rem;
+
+    border-radius: 3px;
+    
+    width: 200px;
+    padding: 3px;
+}

@@ -1,8 +1,8 @@
 import { useGitHubAutomatedRepos } from 'github-automated-repos'
 
 // Components
-import { CardProjetos } from './CardProjetos/index.js'
-import { Container, ScaleFadeIn } from '../index.js'
+import { CardProjetos } from './CardProjetos/index'
+import { Container, ScaleFadeIn, Title } from '../index'
 
 // import css
 import './projetos.css'
@@ -15,7 +15,8 @@ export const Projetos = () => {
         <ScaleFadeIn id='container_projetos' position="right">
 
             {/* Titulo */}
-            <h1 className='titulo'>Projetos</h1>   
+            <Title>Projetos</Title> 
+
             <Container dataAttribute="horizontal-padding">
                 <article id='projetos'>
                     {

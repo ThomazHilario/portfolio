@@ -5,13 +5,13 @@ import { FiPhone } from "react-icons/fi";
 
 // import css
 import './contatos.css'
-import { Container, ScaleFadeIn } from "../index.js"
+import { Container, ScaleFadeIn, Title } from "../index"
 
 export const Contatos = () => {
     return(
         <ScaleFadeIn id="container_Contatos" position="right">
             {/* Titulo */}  
-            <h1 className='titulo'>Contatos</h1>
+            <Title>Contatos</Title>
                 
             <Container dataAttribute="horizontal-padding">
                 <ul id='contatos'>

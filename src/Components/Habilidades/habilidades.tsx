@@ -1,5 +1,5 @@
 // Components
-import { Container, ScaleFadeIn  } from "../index.js"
+import { Container, ScaleFadeIn, Title  } from "../index"
 
 
 // import icons
@@ -19,7 +19,8 @@ export const Habilidades = () => {
         <ScaleFadeIn id='container_habilidade' position="left">
 
             {/* Titulo */}
-            <h1 className='titulo'>Habilidades</h1>
+            <Title>Habilidades</Title>
+            
             <Container dataAttribute="horizontal-padding">
                 {/* Seção de habilidades */}
                 <section id='mySkills'>

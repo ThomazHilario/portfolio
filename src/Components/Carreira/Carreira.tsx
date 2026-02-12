@@ -1,5 +1,5 @@
 // Components
-import { ScaleFadeIn, Container } from '../index.js'
+import { ScaleFadeIn, Container, Title } from '../index.js'
 import { CardCarreiraItem } from './CardCarreiraItem/index.js'
 import { SectionContentCarreira } from './SectionContentCarreira/index.js'
 
@@ -15,7 +15,7 @@ export const Carreira = () => {
     return(
         <ScaleFadeIn id='container__carreira' position="left">
             {/* Titulo */}
-            <h1 className="titulo">💼 Carreira</h1>
+            <Title>💼 Carreira</Title>
 
             <Container>
                 {/* Lista de experiências profissionais */}

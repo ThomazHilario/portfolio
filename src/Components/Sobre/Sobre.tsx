@@ -1,5 +1,5 @@
 // Components
-import { ScaleFadeIn } from '../index.js'
+import { ScaleFadeIn, Title } from '../index'
 
 // import css
 import './sobre.css'
@@ -9,7 +9,7 @@ export const SobreMim = () => {
         <ScaleFadeIn id='container_sobremim' position="right">
             
             {/* Titulo */}
-            <h1 className='titulo'>🙂 Sobre mim</h1>
+            <Title>🙂 Sobre mim</Title>
             
 
             <section id='container_texto'>
