@@ -1,16 +1,13 @@
 // Components
-import { ScaleFadeIn } from '../Animations/ScaleFadeIn'
-import { CardCarreiraItem } from './CardCarreiraItem'
-import { SectionContentCarreira } from './SectionContentCarreira'
-
-import { motion } from 'framer-motion'
+import { ScaleFadeIn, Container, Title } from '../index.js'
+import { CardCarreiraItem } from './CardCarreiraItem/index.js'
+import { SectionContentCarreira } from './SectionContentCarreira/index.js'
 
 // Mock
 import mock from '../../Mocks/carreira.json'
 
 // Css
 import './carreira.css'
-import { Container } from '../Container'
 
 export const Carreira = () => {
     const { academico, profissional } = mock
@@ -18,7 +15,7 @@ export const Carreira = () => {
     return(
         <ScaleFadeIn id='container__carreira' position="left">
             {/* Titulo */}
-            <h1 className="titulo">💼 Carreira</h1>
+            <Title>💼 Carreira</Title>
 
             <Container>
                 {/* Lista de experiências profissionais */}
@@ -29,9 +26,9 @@ export const Carreira = () => {
                         {profissional.map((item, index) => (
                             <CardCarreiraItem
                                 key={index}
-                                Title={item.title}
-                                Description={item.description}
-                                Date={item.date}
+                                title={item.title}
+                                description={item.description}
+                                date={item.date}
                                 isActive={item.isActive}
                             />
                         ))}
@@ -43,9 +40,9 @@ export const Carreira = () => {
                         {academico.map((item, index) => (
                             <CardCarreiraItem
                                 key={index}
-                                Title={item.title}
-                                Description={item.description}
-                                Date={item.date}
+                                title={item.title}
+                                description={item.description}
+                                date={item.date}
                                 isActive={item.isActive}
                             />
                         ))}

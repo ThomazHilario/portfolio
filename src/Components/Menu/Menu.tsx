@@ -3,15 +3,23 @@ import { gsap } from "gsap";
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
 // Components
-import { MenuMobile } from "./menu-mobile";
+import { MenuMobile } from "./menu-mobile/index.js";
 
 // Css
 import './menu.css'
 
+export const MENU_OPTIONS = [
+    { id: "sobre-option", name: 'Sobre' },
+    { id: "hability-option", name: 'Habilidades' },
+    { id: "projects-options", name: 'Projetos' },
+    { id: "carrer-optio", name: 'Carreira' },
+    { id: "contacts-option", name: 'Contatos' },
+]
+
 export const Menu = () => {
 
     // Return Gsap Props
-    function returnGsapProps(duration, sectionName, offsetY){
+    function returnGsapProps(duration: number, sectionName: string, offsetY: number){
         return {
                 duration, 
                 scrollTo: {
@@ -22,7 +30,7 @@ export const Menu = () => {
     }
 
     // Scroll section
-    function scrollSection(text){
+    function scrollSection(text: string){
         // Registrando plugin
         gsap.registerPlugin(ScrollToPlugin)
         
@@ -62,13 +70,10 @@ export const Menu = () => {
             <MenuMobile scrollSection={scrollSection}/>
 
             <menu id='menu_desktop'>
-                <button onClick={(e) => scrollSection(e.target.textContent)}>Sobre</button>
-                <button onClick={(e) => scrollSection(e.target.textContent)}>Habilidades</button>
-                <button onClick={(e) => scrollSection(e.target.textContent)}>Projetos</button>
-                <button onClick={(e) => scrollSection(e.target.textContent)}>Carreira</button>
-                <button onClick={(e) => scrollSection(e.target.textContent)}>Contatos</button>
+                {MENU_OPTIONS.map((option) => (
+                    <button key={option.id} onClick={() => scrollSection(option.name)}>{option.name}</button>
+                ))}
             </menu>
         </nav>
     )
-    
 }
