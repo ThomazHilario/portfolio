@@ -1,5 +1,5 @@
 // Components
-import { ScaleFadeIn } from '../Animations/ScaleFadeIn'
+import { ScaleFadeIn } from '../index.js'
 
 // import css
 import './sobre.css'

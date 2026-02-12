@@ -1,7 +1,14 @@
 // Frame motion
 import { motion, AnimatePresence } from "motion/react"
+import type { ReactNode } from "react";
 
-export const ScaleFadeIn = ({position, amountValue, children, id}) => (
+type ScaleFadeInProps = {
+    id: string;
+    position: string;  
+    children: ReactNode;
+}
+
+export const ScaleFadeIn = ({position, children, id}: ScaleFadeInProps) => (
     <AnimatePresence>
         <motion.section 
             id={id}

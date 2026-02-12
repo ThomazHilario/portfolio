@@ -1,6 +1,6 @@
 // Components
-import { Container } from "../Container"
-import { ScaleFadeIn } from "../Animations/ScaleFadeIn"
+import { Container, ScaleFadeIn  } from "../index.js"
+
 
 // import icons
 import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiJest, SiVitest } from "react-icons/si"

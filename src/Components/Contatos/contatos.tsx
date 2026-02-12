@@ -5,8 +5,7 @@ import { FiPhone } from "react-icons/fi";
 
 // import css
 import './contatos.css'
-import { ScaleFadeIn } from "../Animations/ScaleFadeIn";
-import { Container } from "../Container";
+import { Container, ScaleFadeIn } from "../index.js"
 
 export const Contatos = () => {
     return(

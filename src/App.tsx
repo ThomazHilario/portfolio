@@ -1,5 +1,5 @@
 import './App.css'
-import RoutesPage from './Routes'
+import RoutesPage from './Routes/index.jsx'
 
 function App() {
 

@@ -1,0 +1,8 @@
+export { ScaleFadeIn } from './Animations/index.js'
+export { Container } from './Container/index.js'
+export { Menu } from './Menu/Menu.js'
+export { SobreMim } from './Sobre/index.js'
+export { Habilidades } from './Habilidades/index.js'
+export { Projetos } from './Projetos/index.js'
+export { Carreira } from './Carreira/index.js'
+export { Contatos } from './Contatos/index.js'
