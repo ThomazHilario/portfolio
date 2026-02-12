@@ -1,1 +1,1 @@
-export * from './Sobre.js'
+export * from './Sobre'

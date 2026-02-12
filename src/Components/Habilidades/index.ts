@@ -1,1 +1,1 @@
-export * from './habilidades.js'
+export * from './habilidades'

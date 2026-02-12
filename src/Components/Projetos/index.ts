@@ -1,1 +1,1 @@
-export * from './Projetos.js'
+export * from './Projetos'

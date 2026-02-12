@@ -1,1 +1,1 @@
-export * from './contatos.js'
+export * from './contatos'

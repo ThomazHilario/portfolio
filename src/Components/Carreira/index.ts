@@ -1,1 +1,1 @@
-export * from './Carreira.js'
+export * from './Carreira'

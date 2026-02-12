@@ -1,13 +1,9 @@
 import './App.css'
-import RoutesPage from './Routes/index.jsx'
+import RoutesPage from './Routes/index'
 
 function App() {
 
-  return (
-    <>
-      <RoutesPage/>
-    </>
-  )
+  return <RoutesPage />
 }
 
 export default App
