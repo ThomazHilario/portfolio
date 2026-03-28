@@ -1,6 +1,3 @@
-// Radix-UI
-import * as Dialog from '@radix-ui/react-dialog'
-
 // Icons
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -15,7 +12,7 @@ type MenuMobileProps = {
     scrollSection: (text: string) => void;
 }
 
-export const MenuMobile = ({scrollSection}: MenuMobileProps) => {
+export const MenuSidebar = ({scrollSection}: MenuMobileProps) => {
     return(
         <Drawer direction='left'>
             <DrawerTrigger className='sm:hidden cursor-pointer'>
@@ -23,7 +20,7 @@ export const MenuMobile = ({scrollSection}: MenuMobileProps) => {
             </DrawerTrigger>
 
             <DrawerPortal>
-                <DrawerContent className='flex flex-col items-center bg-neutral/95 text-[#dee5ff]'>
+                <DrawerContent className='flex flex-col items-center bg-neutral/95 text-default-text font-spaceGrotesk'>
 
                     <div className='flex justify-between items-center pb-4 gap-14 border-b border-primary/10'>
                         <h1 className="text-xl tracking-tighter">{env.PERSONAL_NAME}</h1>
@@ -42,7 +39,7 @@ export const MenuMobile = ({scrollSection}: MenuMobileProps) => {
                         ))}
                     </menu>
 
-                    <ButtonRedirect className='mt-auto'/>
+                    <ButtonRedirect className='flex md:flex mt-auto'/>
                 </DrawerContent>
             </DrawerPortal>
             
