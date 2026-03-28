@@ -3,18 +3,12 @@ import { gsap } from "gsap";
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
 // Components
-import { MenuSidebar } from "./MenuSidebar/index.js";
+import { MenuSidebar } from "./MenuSidebar";
+import { ButtonRedirect } from "./ButtonRedirect";
 
 import env from "../../utils/env.js";
-import { ButtonRedirect } from "./ButtonRedirect.js";
+import { MENU_OPTIONS } from "./Config/options-menu.js";
 
-export const MENU_OPTIONS = [
-    { id: "sobre-option", name: 'Sobre' },
-    { id: "hability-option", name: 'Habilidades' },
-    { id: "projects-options", name: 'Projetos' },
-    { id: "carrer-optio", name: 'Carreira' },
-    { id: "contacts-option", name: 'Contatos' },
-]
 
 export const Menu = () => {
 
