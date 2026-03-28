@@ -15,7 +15,7 @@ import Foto from '../../assets/foto.png'
 
 export default function Home(){
     return(
-        <main id='container_main'>
+        <main id='container_main' className='bg-neutral'>
             <Container dataAttribute="vertical-padding">
                 {/* Container foto */}
                 <section id="container_apresentacao">
