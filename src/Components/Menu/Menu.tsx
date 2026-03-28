@@ -66,14 +66,14 @@ export const Menu = () => {
     return(
         <header className="bg-neutral/80 flex justify-between px-10 items-center min-h-20 w-full text-[#dee5ff] fixed top-0 z-50 backdrop-blur-sm shadow-[0_20px_40px_-15px_rgba(96,99,238,0.1)]">
 
-            <h1 className="text-sm sm:text-2xl tracking-tighter">{env.PERSONAL_NAME}</h1>
+            <h1 className="text-2xl tracking-tighter">{env.PERSONAL_NAME}</h1>
 
             <nav>
 
                 {/* Menu Mobile */}
                 <MenuMobile scrollSection={scrollSection}/>
 
-                <menu className="flex gap-5 text-sm sm:text-md lg:text-lg">
+                <menu className="hidden gap-5 text-sm sm:text-md lg:text-lg sm:flex">
                     {MENU_OPTIONS.map((option) => (
                         <button className="cursor-pointer" key={option.id} onClick={() => scrollSection(option.name)}>{option.name}</button>
                     ))}

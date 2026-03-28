@@ -1,13 +1,14 @@
 // Radix-UI
 import * as Dialog from '@radix-ui/react-dialog'
-import { VisuallyHidden } from '@radix-ui/themes';
 
 // Icons
 import { FiMenu, FiX } from "react-icons/fi";
 
-// Css
-import './menu-mobile.css'
 import { MENU_OPTIONS } from '../Menu.js';
+import { Drawer, DrawerClose, DrawerContent, DrawerPortal, DrawerTrigger } from '../../Commons/index.js';
+
+import env from "../../../utils/env.js";
+import { ButtonRedirect } from '../ButtonRedirect.js';
 
 // type
 type MenuMobileProps = {
@@ -16,40 +17,35 @@ type MenuMobileProps = {
 
 export const MenuMobile = ({scrollSection}: MenuMobileProps) => {
     return(
-        <Dialog.Root>
-            <Dialog.Trigger id='icon__menu'>
-                <FiMenu color="white" size={30}/>
-            </Dialog.Trigger>
+        <Drawer direction='left'>
+            <DrawerTrigger className='sm:hidden cursor-pointer'>
+                <FiMenu color="gray" size={30} />
+            </DrawerTrigger>
 
-            
-                <Dialog.Content id='content__menu__mobile'>
+            <DrawerPortal>
+                <DrawerContent className='flex flex-col items-center bg-neutral/95 text-[#dee5ff]'>
 
-                    {/* Acessibilidade */}
-                    <VisuallyHidden>
-                        <Dialog.Title>
-                            Menu Mobile
-                        </Dialog.Title>
+                    <div className='flex justify-between items-center pb-4 gap-14 border-b border-primary/10'>
+                        <h1 className="text-xl tracking-tighter">{env.PERSONAL_NAME}</h1>
 
-                        <Dialog.Description>
-                            Menu para acessar os botões, que irão direcionar o usuário a sua respectiva seção do portfólio.
-                        </Dialog.Description>
-                    </VisuallyHidden>
-
-                    {/* Close dialog */}
-                    <Dialog.Close id='menu__mobile__close__dialog'>
-                        <FiX size={30} color='white'/>
-                    </Dialog.Close>
+                        <DrawerClose className='cursor-pointer'>
+                            <FiX size={20} color='gray'/>
+                        </DrawerClose>
+                    </div>
 
 
-                    <menu>
+                    <menu className='mt-8 flex flex-col items-start gap-5'>
                         {MENU_OPTIONS.map((option) => (
-                            <Dialog.Close key={option.id} onClick={() => scrollSection(option.name)}>
+                            <DrawerClose key={option.id} onClick={() => scrollSection(option.name)}>
                                 {option.name}
-                            </Dialog.Close>
+                            </DrawerClose>
                         ))}
                     </menu>
-                </Dialog.Content>
+
+                    <ButtonRedirect className='mt-auto'/>
+                </DrawerContent>
+            </DrawerPortal>
             
-        </Dialog.Root>
+        </Drawer>
     )
 }
