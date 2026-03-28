@@ -9,9 +9,7 @@ export default function RoutesPage(){
     return(
         <BrowserRouter>
             {/* header  */}
-            <header>
-                <Menu/>
-            </header>
+            <Menu/>
 
             {/* Renderização de rotas */}
             <Routes>

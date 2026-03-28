@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
-*{
-  padding: 0;
-  margin: 0;
+@theme {
+  --color-neutral: #060e20;
+  --color-primary: #6366F1;
+  --color-secondary: #8B5CF6;
+  --color-tertiary: #D946EF;
 }
 
 /* ===== Scrollbar CSS ===== */
