@@ -10,7 +10,7 @@ const buttonVariants = {
     primary: "bg-[#a3a6ff] h-9 w-auto max-w-40 cursor-pointer",
     secondary: "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded",
     danger: "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
-    sidebarItems:"bg-transparent text-neutral-300/90 min-w-32 hover:bg-[#494BD6]/10 justify-start border-l-3 border-transparent hover:border-violet-500",
+    sidebarItems:"bg-transparent text-neutral-300/90 min-w-48 hover:bg-[#494BD6]/10 justify-start border-l-3 border-transparent hover:border-violet-500",
 }
 
 export const Button = ({ children, className, variant = undefined, type = "button", ...props }: ButtonProps) => {

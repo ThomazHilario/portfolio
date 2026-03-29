@@ -1,2 +1,2 @@
-export * from './SideBar'
+export * from './Drawer'
 export * from './Button'

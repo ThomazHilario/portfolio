@@ -1,7 +1,8 @@
 // Icons
 import { FiMenu, FiX } from "react-icons/fi";
 
-import { Button, Drawer, DrawerClose, DrawerContent, DrawerPortal, DrawerTrigger } from '../../Commons';
+import { VisuallyHidden } from "@radix-ui/themes";
+import { Button, Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from '../../Commons';
 import { ButtonRedirect } from '../ButtonRedirect';
 
 import env from "../../../utils/env.js";
@@ -27,37 +28,41 @@ export const MenuSidebar = ({scrollSection}: MenuMobileProps) => {
                 <FiMenu color="gray" size={30} />
             </DrawerTrigger>
 
-            <DrawerPortal>
-                <DrawerContent className='flex flex-col items-center bg-neutral/95 text-default-text font-spaceGrotesk'>
+            <DrawerContent className='flex flex-col items-center bg-neutral/95 text-default-text font-spaceGrotesk'>
 
-                    <div className='flex justify-between items-center pb-4 gap-14 border-b border-primary/10'>
-                        <h1 className="text-xl tracking-tighter">{env.PERSONAL_NAME}</h1>
+                <VisuallyHidden>
+                    <DrawerDescription>
+                        Componente responsavel para visualizar um menu sidebar para o usuário.
+                    </DrawerDescription>
+                </VisuallyHidden>
 
-                        <DrawerClose className='cursor-pointer' aria-label="Fechar menu de navegação">
-                            <FiX size={20} color='gray'/>
-                        </DrawerClose>
-                    </div>
+                <DrawerHeader className='flex flex-row pb-4 gap-14 border-b border-primary/10'>
+                    <DrawerTitle className="text-xl tracking-tighter">{env.PERSONAL_NAME}</DrawerTitle>
 
+                    <DrawerClose className='cursor-pointer' aria-label="Fechar menu de navegação">
+                        <FiX size={20} color='gray'/>
+                    </DrawerClose>
+                </DrawerHeader>
 
-                    <menu className='mt-8 flex flex-col items-start gap-5'>
-                        {MENU_OPTIONS.map((option) => (
-                            <Button 
-                                key={option.id} 
-                                className="gap-3"
-                                variant="sidebarItems"
-                                onClick={() => handleScrollSection(() => scrollSection(option.name))}     
-                                aria-label={`Navegar para seção ${option.name}`}
-                            >
-                                {option.icon}
-                                {option.name}
-                            </Button>
-                        ))}
-                    </menu>
+                <menu className='mt-8 flex flex-col items-start gap-5'>
+                    {MENU_OPTIONS.map((option) => (
+                        <Button 
+                            key={option.id} 
+                            className="gap-3"
+                            variant="sidebarItems"
+                            onClick={() => handleScrollSection(() => scrollSection(option.name))}     
+                            aria-label={`Navegar para seção ${option.name}`}
+                        >
+                            {option.icon}
+                            {option.name}
+                        </Button>
+                    ))}
+                </menu>
 
+                <DrawerFooter>
                     <ButtonRedirect className='flex md:flex mt-auto'/>
-                </DrawerContent>
-            </DrawerPortal>
-            
+                </DrawerFooter>
+            </DrawerContent>
         </Drawer>
     )
 }
