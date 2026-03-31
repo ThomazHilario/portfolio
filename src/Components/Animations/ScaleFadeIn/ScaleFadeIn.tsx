@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "motion/react"
 import type { ReactNode } from "react";
 
 type ScaleFadeInProps = {
-    id: string;
+    id?: string;
     position: string;  
     children: ReactNode;
 }

@@ -1,41 +1,40 @@
 // Components
-import { Container, ScaleFadeIn, Title  } from "../index"
+import { Card } from "../Commons/Card"
+import { ScaleFadeIn } from "../index"
+import { Section, SectionHeader } from "../Section"
 
-
-// import icons
-import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiJest, SiVitest } from "react-icons/si"
-
-// import css
-import './habilidades.css'
+import { stacks } from "../../Config"
+import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from "../Commons/Carousel"
 
 export const Habilidades = () => {
 
-    const propsIcons = {
-        color:'blueviolet',
-        size:70
-    }
-
     return(
-        <ScaleFadeIn id='container_habilidade' position="left">
-
-            {/* Titulo */}
-            <Title>Habilidades</Title>
-            
-            <Container dataAttribute="horizontal-padding">
+        <ScaleFadeIn position="left">
+            <Section>
+                <SectionHeader>
+                    <h1 className="text-fuchsia-500">Stacks</h1>
+                    <h2 className="text-white text-2xl md:text-6xl">Tecnologias</h2>
+                </SectionHeader>
+                
                 {/* Seção de habilidades */}
-                <section id='mySkills'>
-                    <SiHtml5 {...propsIcons} />
-                    <SiCss3 {...propsIcons} />
-                    <SiJavascript {...propsIcons} />
-                    <SiTypescript {...propsIcons} />
-                    <SiReact {...propsIcons}/>
-                    <SiTailwindcss {...propsIcons} />
-                    <SiJest {...propsIcons}/>
-                    <SiVitest {...propsIcons} />
-                    <SiGit {...propsIcons} />
-                    <SiGithub {...propsIcons} />
-                </section>
-            </Container>    
+                <Carousel>
+                    <CarouselPrevButton />
+
+                    <CarouselViewport>
+                        <CarouselContent className="flex gap-5 justify-between">
+                            {stacks.map((stack, index) => (
+                                <Card className="bg-slate-900" key={index}>
+                                    {stack.icon}
+                                </Card>
+                            ))}
+                        </CarouselContent> 
+                    </CarouselViewport> 
+
+                    <CarouselNextButton />
+                </Carousel>
+
+                
+            </Section>
         </ScaleFadeIn>
     )
 }

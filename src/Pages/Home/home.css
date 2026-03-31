@@ -5,12 +5,6 @@
 
 #container_main{
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-    overflow: hidden;
 
     /* Container apresentacao */
     #container_apresentacao{
