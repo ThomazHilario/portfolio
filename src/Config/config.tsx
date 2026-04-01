@@ -2,8 +2,8 @@ import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, S
 
 
 const propsIcons = {
-    color:'purple',
-    size:50
+    className:"text-[#6366F1]",
+    size:40
 }
 
 export const stacks = [

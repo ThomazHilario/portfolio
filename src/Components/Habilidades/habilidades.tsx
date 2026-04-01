@@ -1,10 +1,13 @@
 // Components
-import { Card } from "../Commons/Card"
+import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from "../Commons/Carousel"
+import { Card, CardContent, CardHeader, CardTitle } from "../Commons/Card"
 import { ScaleFadeIn } from "../index"
 import { Section, SectionHeader } from "../Section"
 
+import { GoDotFill } from "react-icons/go";
+
 import { stacks } from "../../Config"
-import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from "../Commons/Carousel"
+
 
 export const Habilidades = () => {
 
@@ -16,24 +19,29 @@ export const Habilidades = () => {
                     <h2 className="text-white text-2xl md:text-6xl">Tecnologias</h2>
                 </SectionHeader>
                 
-                {/* Seção de habilidades */}
                 <Carousel>
                     <CarouselPrevButton />
 
                     <CarouselViewport>
                         <CarouselContent className="flex gap-5 justify-between">
                             {stacks.map((stack, index) => (
-                                <Card className="bg-slate-900" key={index}>
-                                    {stack.icon}
+                                <Card className="flex justify-center items-center flex-col bg-slate-900" key={index}>
+                                    <CardHeader>
+                                        {stack.icon}
+                                    </CardHeader>
+                                    <CardContent>
+                                        <CardTitle className="text-neutral-400 px-0 pr-1 font-semibold text-xs flex justify-center items-center gap-1">
+                                            <GoDotFill color="purple" />
+                                            {stack.name}
+                                        </CardTitle>
+                                    </CardContent>
                                 </Card>
                             ))}
                         </CarouselContent> 
                     </CarouselViewport> 
 
                     <CarouselNextButton />
-                </Carousel>
-
-                
+                </Carousel>        
             </Section>
         </ScaleFadeIn>
     )
