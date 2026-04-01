@@ -8,7 +8,7 @@ export const CardTitle = ({ className, ...props }: CardTitleProps) => {
     <div
       data-slot="card-title"
       className={cn(
-        "cn-font-heading text-base leading-snug font-medium group-data-[size=sm]/card:text-sm",
+        "cn-font-heading text-base leading-snug font-bold group-data-[size=sm]/card:text-sm font-spaceGrotesk",
         className
       )}
       {...props}

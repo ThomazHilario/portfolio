@@ -6,7 +6,7 @@ type SectionHeaderProps = DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, H
 }>
 
 export const SectionHeader = ({ children, className, ...props }: SectionHeaderProps) => (
-    <section className={cn("flex flex-col gap-5", className)} {...props}>
+    <section className={cn("flex flex-col gap-5 font-spaceGrotesk", className)} {...props}>
         {children}
     </section>
 )

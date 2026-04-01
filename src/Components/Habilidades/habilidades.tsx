@@ -25,7 +25,7 @@ export const Habilidades = () => {
                     <CarouselViewport>
                         <CarouselContent className="flex gap-5 justify-between">
                             {stacks.map((stack, index) => (
-                                <Card className="flex justify-center items-center flex-col bg-slate-900" key={index}>
+                                <Card className="flex justify-center items-center flex-col bg-slate-800/40" key={index}>
                                     <CardHeader>
                                         {stack.icon}
                                     </CardHeader>
