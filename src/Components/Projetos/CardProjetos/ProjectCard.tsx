@@ -14,8 +14,8 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({homepage, title, description, topics, banner}: ProjectCardProps) => {
     return (
-        <a href={homepage} className='w-64.5' target='blank'>
-            <Card className='text-default-text bg-slate-800/40 w-64.5 h-95 shadow-[0_20px_40px_-15px_rgba(96,99,238,0.1)]'>
+        <a href={homepage} className='md:mx-auto shadow-[0_20px_40px_-15px_rgba(96,99,238,0.1)]' target='blank'>
+            <Card className='text-default-text bg-slate-800/40 w-64.5 h-95 '>
                     <CardHeader>
                         <CardTitle>{title}</CardTitle>
                     </CardHeader>

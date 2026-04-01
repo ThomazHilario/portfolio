@@ -26,7 +26,7 @@ export const Projetos = () => {
 
                 <article className=''>
                     <Carousel>
-                        <CarouselViewport className='md:overflow-auto md:w-full'>
+                        <CarouselViewport className='md:w-full'>
                             <CarouselContent className='flex gap-5 justify-between md:w-full md:grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] items-center'>
                                 {
                                     data.map((project) => {
