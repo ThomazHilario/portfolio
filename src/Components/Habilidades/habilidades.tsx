@@ -1,13 +1,21 @@
 // Components
-import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from "../Commons/Carousel"
-import { Card, CardContent, CardHeader, CardTitle } from "../Commons/Card"
+import { 
+    Carousel, 
+    CarouselContent, 
+    CarouselNextButton, 
+    CarouselPrevButton, 
+    CarouselViewport, 
+    Card, CardContent, 
+    CardHeader, 
+    CardTitle,
+} from "@/Components/Commons"
+import { Section, SectionHeader } from "@/Components/Section"
+
 import { ScaleFadeIn } from "../index"
-import { Section, SectionHeader } from "../Section"
 
 import { GoDotFill } from "react-icons/go";
 
-import { stacks } from "../../Config"
-
+import { stacks } from "@/Config"
 
 export const Habilidades = () => {
 

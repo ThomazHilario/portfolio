@@ -1,6 +1,8 @@
 import { useGitHubAutomatedRepos } from 'github-automated-repos'
 
 // Components
+import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from '@/Components/Commons'
+import { Section, SectionHeader } from '@/Components/Section'
 import { ProjectCard } from './CardProjetos/ProjectCard'
 import { ScaleFadeIn } from '../index'
 
@@ -8,9 +10,7 @@ import { ScaleFadeIn } from '../index'
 import './projetos.css'
 
 // env 
-import env from '../../utils/env'
-import { Section, SectionHeader } from '../Section'
-import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from '../Commons/Carousel'
+import env from '@/utils/env'
 
 export const Projetos = () => {
     // Buscando meus projetos
@@ -24,7 +24,7 @@ export const Projetos = () => {
                     <h2 className="text-white text-2xl md:text-6xl">Projetos selecionados</h2>
                 </SectionHeader>    
 
-                <article className=''>
+                <article>
                     <Carousel>
                         <CarouselViewport className='md:w-full'>
                             <CarouselContent className='flex gap-5 justify-between md:w-full md:grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] items-center'>

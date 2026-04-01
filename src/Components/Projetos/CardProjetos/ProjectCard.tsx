@@ -1,6 +1,5 @@
-// css
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../Commons/Card';
-import { CardFooter } from '../../Commons/Card/CardFooter';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/Components/Commons";
+
 
 // Interface
 type ProjectCardProps = {

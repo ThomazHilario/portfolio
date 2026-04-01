@@ -10,6 +10,9 @@
     "module": "EsNext",
     "target": "EsNext",
     "types": [],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
