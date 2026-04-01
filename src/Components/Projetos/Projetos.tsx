@@ -2,12 +2,9 @@ import { useGitHubAutomatedRepos } from 'github-automated-repos'
 
 // Components
 import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from '@/Components/Commons'
-import { Section, SectionHeader } from '@/Components/Section'
+import { Section, SectionHeader, SectionTitle, SectionSubtitle } from "@/Components/Section"
 import { ProjectCard } from './CardProjetos/ProjectCard'
 import { ScaleFadeIn } from '../index'
-
-// import css
-import './projetos.css'
 
 // env 
 import env from '@/utils/env'
@@ -20,8 +17,8 @@ export const Projetos = () => {
         <ScaleFadeIn id='container_projetos' position="right">
             <Section>
                 <SectionHeader>
-                    <h1 className="text-fuchsia-500">Projetos</h1>
-                    <h2 className="text-white text-2xl md:text-6xl">Projetos selecionados</h2>
+                    <SectionTitle>Projetos</SectionTitle>
+                    <SectionSubtitle>Projetos Selecionados</SectionSubtitle>
                 </SectionHeader>    
 
                 <article>

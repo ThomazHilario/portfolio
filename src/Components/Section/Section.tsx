@@ -6,7 +6,7 @@ type SectionProps = DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLEle
 }>
 
 export const Section = ({ children, className, ...props }: SectionProps) => (
-    <section className={cn("min-h-20 px-4 md:px-12 flex flex-col gap-24", className)} {...props}>
+    <section className={cn("min-h-20 px-4 md:px-12 flex flex-col gap-20", className)} {...props}>
         {children}
     </section>
 )

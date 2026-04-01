@@ -9,7 +9,7 @@ import {
     CardHeader, 
     CardTitle,
 } from "@/Components/Commons"
-import { Section, SectionHeader } from "@/Components/Section"
+import { Section, SectionHeader, SectionTitle, SectionSubtitle } from "@/Components/Section"
 
 import { ScaleFadeIn } from "../index"
 
@@ -23,8 +23,8 @@ export const Habilidades = () => {
         <ScaleFadeIn position="left">
             <Section>
                 <SectionHeader>
-                    <h1 className="text-fuchsia-500">Stacks</h1>
-                    <h2 className="text-white text-2xl md:text-6xl">Tecnologias</h2>
+                    <SectionTitle>Stacks</SectionTitle>
+                    <SectionSubtitle>Tecnologias</SectionSubtitle>
                 </SectionHeader>
                 
                 <Carousel>
