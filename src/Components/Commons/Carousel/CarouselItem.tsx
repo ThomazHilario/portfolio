@@ -6,7 +6,7 @@ type CarouselItemProps = PropsWithChildren<{
 }>
 
 export const CarouselItem = ({ children, className }: CarouselItemProps) => (
-    <div className={cn("min-w-0 shrink-0 grow-0 basis-full", className)}>
+    <div className={cn("min-w-0 shrink-0 grow-0 basis-full sm:basis-auto", className)}>
         {children}
     </div>
 )

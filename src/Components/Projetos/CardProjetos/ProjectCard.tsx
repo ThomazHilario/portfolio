@@ -34,7 +34,7 @@ export const ProjectCard = ({homepage, title, description, topics, banner}: Proj
                         </section>
                     </CardContent>
 
-                    <CardFooter className='border-none'>
+                    <CardFooter className='border-none mt-auto'>
                         <img className='h-42 rounded-lg' src={banner} alt="imagem do projeto" />
                     </CardFooter>      
             </Card>

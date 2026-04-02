@@ -1,7 +1,7 @@
 import { useGitHubAutomatedRepos } from 'github-automated-repos'
 
 // Components
-import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from '@/Components/Commons'
+import { Carousel, CarouselContent, CarouselItem, CarouselNextButton, CarouselPrevButton, CarouselViewport } from '@/Components/Commons'
 import { Section, SectionHeader, SectionTitle, SectionSubtitle } from "@/Components/Section"
 import { ProjectCard } from './CardProjetos/ProjectCard'
 import { ScaleFadeIn } from '../index'
@@ -21,13 +21,13 @@ export const Projetos = () => {
                     <SectionSubtitle>Projetos Selecionados</SectionSubtitle>
                 </SectionHeader>    
 
-                <article>
-                    <Carousel>
-                        <CarouselViewport className='md:w-full'>
-                            <CarouselContent className='flex gap-5 justify-between md:w-full md:grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] items-center'>
-                                {
-                                    data.map((project) => {
-                                        return(
+                <Carousel>
+                    <CarouselViewport className='md:w-full'>
+                        <CarouselContent className='flex gap-5 justify-between md:w-full md:grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] items-center'>
+                            {
+                                data.map((project) => {
+                                    return(
+                                        <CarouselItem className='basis-auto! w-64.5'>
                                             <ProjectCard
                                                 key={project.id}
                                                 homepage={project.homepage}
@@ -36,18 +36,18 @@ export const Projetos = () => {
                                                 topics={project.topics.filter(topic => topic !== 'deployed')}
                                                 banner={project.banner.replace('DIGOARTHUR','ThomazHilario')}
                                             />
-                                        )
-                                    })
-                                }
-                            </CarouselContent>
+                                        </CarouselItem> 
+                                    )
+                                })
+                            }
+                        </CarouselContent>
 
-                            <div className='flex justify-center items-center gap-5 mt-5 md:hidden'>
-                                <CarouselPrevButton/>
-                                <CarouselNextButton/>
-                            </div>
-                        </CarouselViewport>
-                    </Carousel>
-                </article> 
+                        <div className='flex justify-center items-center gap-5 mt-5 md:hidden'>
+                            <CarouselPrevButton/>
+                            <CarouselNextButton/>
+                        </div>
+                    </CarouselViewport>
+                </Carousel>
             </Section>
         </ScaleFadeIn>
     )
