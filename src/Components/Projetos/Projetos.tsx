@@ -1,7 +1,7 @@
 import { useGitHubAutomatedRepos } from 'github-automated-repos'
 
 // Components
-import { Carousel, CarouselContent, CarouselItem, CarouselNextButton, CarouselPrevButton, CarouselViewport } from '@/Components/Commons'
+import { Carousel, CarouselContent, CarouselNextButton, CarouselPrevButton, CarouselViewport } from '@/Components/Commons'
 import { Section, SectionHeader, SectionTitle, SectionSubtitle } from "@/Components/Section"
 import { ProjectCard } from './CardProjetos/ProjectCard'
 import { ScaleFadeIn } from '../index'
@@ -29,16 +29,14 @@ export const Projetos = () => {
                             {
                                 data.map((project) => {
                                     return(
-                                        <CarouselItem className='w-105'>
-                                            <ProjectCard
-                                                key={project.id}
-                                                homepage={project.homepage}
-                                                title={project.name.replace(/(-app|-+)/g,' ')}
-                                                description={project.description}
-                                                topics={project.topics.filter(topic => topic !== 'deployed')}
-                                                banner={project.banner.replace('DIGOARTHUR','ThomazHilario')}
-                                            />
-                                        </CarouselItem> 
+                                        <ProjectCard
+                                            key={project.id}
+                                            homepage={project.homepage}
+                                            title={project.name.replace(/(-app|-+)/g,' ')}
+                                            description={project.description}
+                                            topics={project.topics.filter(topic => topic !== 'deployed')}
+                                            banner={project.banner.replace('DIGOARTHUR','ThomazHilario')}
+                                        />
                                     )
                                 })
                             }
