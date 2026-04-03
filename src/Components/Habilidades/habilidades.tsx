@@ -21,7 +21,7 @@ export const Habilidades = () => {
 
     return(
         <ScaleFadeIn position="left">
-            <Section>
+            <Section className="stacks">
                 <SectionHeader>
                     <SectionTitle>Stacks</SectionTitle>
                     <SectionSubtitle>Tecnologias</SectionSubtitle>

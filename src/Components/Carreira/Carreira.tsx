@@ -12,7 +12,7 @@ export const Carreira = () => {
 
     return(
         <ScaleFadeIn position="left">
-            <Section>
+            <Section className='carreira'>
                 <SectionHeader>
                     <SectionTitle>Carreira</SectionTitle>
                     <SectionSubtitle>Trajetoria Profissional / Educacional:</SectionSubtitle>

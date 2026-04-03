@@ -15,7 +15,7 @@ export const Projetos = () => {
     
     return(
         <ScaleFadeIn id='container_projetos' position="right">
-            <Section>
+            <Section className='projects'>
                 <SectionHeader>
                     <SectionTitle>Projetos</SectionTitle>
                     <SectionSubtitle>Projetos Selecionados</SectionSubtitle>

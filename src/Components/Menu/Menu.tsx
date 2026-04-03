@@ -35,22 +35,22 @@ export const Menu = () => {
         
         // Casoo o texto do button seja habilidades
         if(text === 'Habilidades'){
-            gsap.to(window,returnGsapProps(1, '#container_habilidade', 100))
+            gsap.to(window,returnGsapProps(1, '.stacks', 100))
         }
 
         // Caso o texto do button seja Projetos
         if(text === 'Projetos'){
-            gsap.to(window, returnGsapProps(1, '#container_projetos', 100))
+            gsap.to(window, returnGsapProps(1, '.projects', 100))
         }
 
         // Caso o texto do button seja Carreira
         if(text === 'Carreira'){
-            gsap.to(window, returnGsapProps(1,'#container__carreira', 100))
+            gsap.to(window, returnGsapProps(1,'.carreira', 100))
         }
 
         // Caso o texto do button seja Contatos
         if(text === 'Contatos'){
-            gsap.to(window, returnGsapProps(1, '#container_Contatos', 100))
+            gsap.to(window, returnGsapProps(1, '.contatos', 100))
         }
     
         
