@@ -28,7 +28,7 @@ export const Habilidades = () => {
                 </SectionHeader>
                 
                 <Carousel>
-                    <CarouselPrevButton />
+                    <CarouselPrevButton className='hidden md:flex'/>
 
                     <CarouselViewport>
                         <CarouselContent className="flex gap-5 justify-between">
@@ -46,9 +46,15 @@ export const Habilidades = () => {
                                 </Card>
                             ))}
                         </CarouselContent> 
+
+                         <div className='flex justify-center items-center gap-5 mt-5 md:hidden'>
+                            <CarouselPrevButton/>
+                            <CarouselNextButton/>
+                        </div>
+
                     </CarouselViewport> 
 
-                    <CarouselNextButton />
+                    <CarouselNextButton className='hidden md:flex' />
                 </Carousel>        
             </Section>
         </ScaleFadeIn>

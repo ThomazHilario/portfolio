@@ -19,6 +19,8 @@ export const Carreira = () => {
                 </SectionHeader>
 
                 <Carousel>
+                    <CarouselPrevButton className='hidden md:flex' />
+
                     <CarouselViewport>
                         <CarouselContent className='flex text-white gap-4'>
                             {profissional.map((item, index) => (
@@ -43,7 +45,14 @@ export const Carreira = () => {
                                 />
                             ))}
                         </CarouselContent>
+
+                        <div className='flex justify-center items-center gap-5 mt-5 md:hidden'>
+                            <CarouselPrevButton/>
+                            <CarouselNextButton/>
+                        </div>
                     </CarouselViewport>
+
+                    <CarouselNextButton className='hidden md:flex' />
                 </Carousel>
             </Section>
         </ScaleFadeIn>

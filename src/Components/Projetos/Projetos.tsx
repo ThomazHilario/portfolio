@@ -22,12 +22,14 @@ export const Projetos = () => {
                 </SectionHeader>    
 
                 <Carousel>
-                    <CarouselViewport className='md:w-full'>
-                        <CarouselContent className='flex gap-5 justify-between md:w-full md:grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] items-center'>
+                    <CarouselPrevButton className='hidden md:flex'  />
+
+                    <CarouselViewport>
+                        <CarouselContent className='flex gap-4'>
                             {
                                 data.map((project) => {
                                     return(
-                                        <CarouselItem className='basis-auto! w-64.5'>
+                                        <CarouselItem className='w-105'>
                                             <ProjectCard
                                                 key={project.id}
                                                 homepage={project.homepage}
@@ -47,6 +49,8 @@ export const Projetos = () => {
                             <CarouselNextButton/>
                         </div>
                     </CarouselViewport>
+
+                    <CarouselNextButton className='hidden md:flex'  />
                 </Carousel>
             </Section>
         </ScaleFadeIn>
