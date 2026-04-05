@@ -13,10 +13,10 @@ type CarouselNextButtonProps = PropsWithChildren<{
 
 export const CarouselNextButton = ({ children = <FaAngleRight color="white" />, className }: CarouselNextButtonProps) => {
 
-    const { scrollNext } = useCarouselContext()
+    const { scrollNext, canScrollNext } = useCarouselContext()
 
     return (
-        <Button className={cn("bg-slate-900 rounded-full p-0 m-0 w-10 h-10 shrink-0", className)} onClick={scrollNext}>
+        <Button className={cn("lg:absolute bg-slate-800/70 rounded-full p-0 m-0 w-10 h-10 z-50 shrink-0 lg:right-1 lg:group-hover:flex lg:disabled:hidden", className)} disabled={!canScrollNext} onClick={scrollNext}>
             {children}
         </Button>
     )
