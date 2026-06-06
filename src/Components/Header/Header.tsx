@@ -10,7 +10,7 @@ import env from "../../utils/env.js";
 import { MENU_OPTIONS } from "./Config/options-menu.js";
 
 
-export const Menu = () => {
+export const Header = () => {
 
     // Return Gsap Props
     function returnGsapProps(duration: number, sectionName: string, offsetY: number){
@@ -58,7 +58,7 @@ export const Menu = () => {
     }
 
     return(
-        <header className="bg-neutral/80 flex justify-between px-10 items-center min-h-20 w-full text-default-text fixed top-0 z-50 backdrop-blur-sm shadow-[0_20px_40px_-15px_rgba(96,99,238,0.1)] font-spaceGrotesk">
+        <header className="bg-neutral/80 flex justify-between px-10 items-center min-h-20 w-full text-default-text fixed top-0 z-50 backdrop-blur-sm shadow-[0_20px_40px_-15px_rgba(96,99,238,0.1)]">
 
             <h1 className="text-2xl tracking-tighter font-spaceGrotesk font-bold">{env.PERSONAL_NAME}</h1>
 
