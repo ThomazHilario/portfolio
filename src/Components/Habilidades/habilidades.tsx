@@ -1,41 +1,62 @@
 // Components
-import { Container, ScaleFadeIn, Title  } from "../index"
+import { 
+    Carousel, 
+    CarouselContent, 
+    CarouselNextButton, 
+    CarouselPrevButton, 
+    CarouselViewport, 
+    Card, CardContent, 
+    CardHeader, 
+    CardTitle,
+} from "@/Components/Commons"
+import { Section, SectionHeader, SectionTitle, SectionSubtitle } from "@/Components/Section"
 
+import { ScaleFadeIn } from "../index"
 
-// import icons
-import { SiHtml5, SiCss3, SiTypescript,SiReact,SiGit, SiGithub, SiTailwindcss, SiJavascript, SiJest, SiVitest } from "react-icons/si"
+import { GoDotFill } from "react-icons/go";
 
-// import css
-import './habilidades.css'
+import { stacks } from "@/Config"
 
 export const Habilidades = () => {
 
-    const propsIcons = {
-        color:'blueviolet',
-        size:70
-    }
-
     return(
-        <ScaleFadeIn id='container_habilidade' position="left">
+        <ScaleFadeIn position="left">
+            <Section className="stacks">
+                <SectionHeader>
+                    <SectionTitle>Stacks</SectionTitle>
+                    <SectionSubtitle>Tecnologias</SectionSubtitle>
+                </SectionHeader>
+                
+                <Carousel>
+                    <CarouselPrevButton className='hidden lg:flex' />
 
-            {/* Titulo */}
-            <Title>Habilidades</Title>
-            
-            <Container dataAttribute="horizontal-padding">
-                {/* Seção de habilidades */}
-                <section id='mySkills'>
-                    <SiHtml5 {...propsIcons} />
-                    <SiCss3 {...propsIcons} />
-                    <SiJavascript {...propsIcons} />
-                    <SiTypescript {...propsIcons} />
-                    <SiReact {...propsIcons}/>
-                    <SiTailwindcss {...propsIcons} />
-                    <SiJest {...propsIcons}/>
-                    <SiVitest {...propsIcons} />
-                    <SiGit {...propsIcons} />
-                    <SiGithub {...propsIcons} />
-                </section>
-            </Container>    
+                    <CarouselViewport>
+                        <CarouselContent className="flex gap-5 justify-between">
+                            {stacks.map((stack, index) => (
+                                <Card className="flex justify-center items-center bg-slate-800/40" key={index}>
+                                    <CardHeader>
+                                        {stack.icon}
+                                    </CardHeader>
+                                    <CardContent>
+                                        <CardTitle className="text-neutral-400 px-0 pr-1 font-semibold text-xs flex justify-center items-center gap-1">
+                                            <GoDotFill color="purple" />
+                                            {stack.name}
+                                        </CardTitle>
+                                    </CardContent>
+                                </Card>
+                            ))}
+                        </CarouselContent> 
+
+                         <div className='flex justify-center items-center gap-5 mt-5 lg:hidden'>
+                            <CarouselPrevButton/>
+                            <CarouselNextButton/>
+                        </div>
+
+                    </CarouselViewport> 
+
+                    <CarouselNextButton className='hidden lg:flex' />
+                </Carousel>        
+            </Section>
         </ScaleFadeIn>
     )
 }

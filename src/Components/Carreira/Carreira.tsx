@@ -1,54 +1,60 @@
 // Components
-import { ScaleFadeIn, Container, Title } from '../index.js'
+import { ScaleFadeIn } from '@/Components/Animations'
+import { Carousel, CarouselViewport, CarouselContent, CarouselNextButton, CarouselPrevButton } from '@/Components/Commons'
+import { Section, SectionHeader, SectionTitle, SectionSubtitle } from "@/Components/Section"
 import { CardCarreiraItem } from './CardCarreiraItem/index.js'
-import { SectionContentCarreira } from './SectionContentCarreira/index.js'
 
 // Mock
 import mock from '../../Mocks/carreira.json'
-
-// Css
-import './carreira.css'
 
 export const Carreira = () => {
     const { academico, profissional } = mock
 
     return(
-        <ScaleFadeIn id='container__carreira' position="left">
-            {/* Titulo */}
-            <Title>💼 Carreira</Title>
+        <ScaleFadeIn position="left">
+            <Section className='carreira'>
+                <SectionHeader>
+                    <SectionTitle>Carreira</SectionTitle>
+                    <SectionSubtitle>Trajetoria Profissional / Educacional:</SectionSubtitle>
+                </SectionHeader>
 
-            <Container>
-                {/* Lista de experiências profissionais */}
-                <article id="carreira__article__container">
-                    {/* Carreira Profissional */}
-                    <SectionContentCarreira titulo='Profissional'>
+                <Carousel>
+                    <CarouselPrevButton className='hidden lg:flex' />
 
-                        {profissional.map((item, index) => (
-                            <CardCarreiraItem
-                                key={index}
-                                title={item.title}
-                                description={item.description}
-                                date={item.date}
-                                isActive={item.isActive}
-                            />
-                        ))}
+                    <CarouselViewport>
+                        <CarouselContent className='flex text-white gap-4'>
+                            {profissional.map((item, index) => (
+                                <CardCarreiraItem
+                                    key={index}
+                                    title={item.title}
+                                    role={item.role}
+                                    description={item.description}
+                                    date={item.date}
+                                    isActive={item.isActive}
+                                />
+                            ))}
 
-                    </SectionContentCarreira>
+                            {academico.map((item, index) => (
+                                <CardCarreiraItem
+                                    key={index}
+                                    title={item.title}
+                                    role={item.role}
+                                    description={item.description}
+                                    date={item.date}
+                                    isActive={item.isActive}
+                                />
+                            ))}
+                        </CarouselContent>
 
-                    {/* Carreira Acadêmica */}
-                    <SectionContentCarreira titulo='Acadêmico'>
-                        {academico.map((item, index) => (
-                            <CardCarreiraItem
-                                key={index}
-                                title={item.title}
-                                description={item.description}
-                                date={item.date}
-                                isActive={item.isActive}
-                            />
-                        ))}
-                    </SectionContentCarreira>
-                </article>
-            </Container>
+                        <div className='flex justify-center items-center gap-5 mt-5 lg:hidden'>
+                            <CarouselPrevButton/>
+                            <CarouselNextButton/>
+                        </div>
+                    </CarouselViewport>
+
+                    <CarouselNextButton className='hidden lg:flex' />
+                </Carousel>
+            </Section>
         </ScaleFadeIn>
     )
 }
