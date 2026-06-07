@@ -1,5 +1,4 @@
 export { ScaleFadeIn } from './Animations'
-export { Container } from './Container'
 export { Header } from './Header'
 export { SobreMim } from './Sobre'
 export { Habilidades } from './Habilidades'
