@@ -1,24 +1,36 @@
-// Css
-import './card-carreira-item.css'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, CarouselItem } from '@/Components/Commons';
+import { cn } from '@/utils';
 
 type CardCarreiraItemProps = {
     title: String;
+    role: String;
     description: String;
     date: String;
     isActive: Boolean;
 }
 
-export const CardCarreiraItem = ({title, description, date, isActive}: CardCarreiraItemProps) => {
+export const CardCarreiraItem = ({title, role, description, date, isActive}: CardCarreiraItemProps) => {
     return(
-        <li className='item__carreira' style={{borderColor:isActive ? '#4ae2919a' : 'rgba(81, 21, 127, 0.318)' }}>
-            {/* Titulo */}
-            <h3>{title}</h3>
+        <CarouselItem className='w-105'>
+            <Card className={cn(
+                'bg-slate-800/40 h-full border-2',  
+                isActive ? 'border-[#4ae2919a]' : 'border-transparent'
+            )}>
+                <CardHeader>
+                    <CardTitle>{title}</CardTitle>
+                    <CardTitle className='text-sm font-normal text-indigo-400'>{role}</CardTitle>
+                </CardHeader>
 
-            {/* Descrição */}
-            <p>{description}</p>
+                <CardContent className='min-h-24 justify-start'>
+                    <CardDescription className='break-normal!'>
+                        {description}
+                    </CardDescription>
+                </CardContent>
 
-            {/* Data */}
-            <h4>{date}</h4>
-        </li>
+                <CardFooter className='border-t-0 justify-end mt-auto'>
+                    <h4>{date}</h4>
+                </CardFooter>
+            </Card>
+        </CarouselItem>
     )
 }

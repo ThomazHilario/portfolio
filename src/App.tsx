@@ -1,9 +1,13 @@
-import './App.css'
+import { MainLayout } from './Components'
 import RoutesPage from './Routes/index'
 
 function App() {
 
-  return <RoutesPage />
+  return (
+    <MainLayout>
+      <RoutesPage />
+    </MainLayout>
+  )
 }
 
 export default App

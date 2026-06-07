@@ -1,9 +1,0 @@
-/* carreira section container */
-#carreira__article__container{
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    flex-wrap: wrap;
-    gap: 1rem;
-    
-}

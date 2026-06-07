@@ -1,25 +1,18 @@
-// Components
-import { ScaleFadeIn, Title } from '../index'
-
-// import css
-import './sobre.css'
+import { ScaleFadeIn, Text } from '../index'
+import { Profile } from './Profile'
 
 export const SobreMim = () => {
     return(
-        <ScaleFadeIn id='container_sobremim' position="right">
-            
-            {/* Titulo */}
-            <Title>🙂 Sobre mim</Title>
-            
+        <ScaleFadeIn position="right" className='space-y-15'>  
+            <Profile />     
 
-            <section id='container_texto'>
-                {/* Texto de apresentacao */}
+            <section className='p-1.5 flex flex-col-reverse justify-center items-center gap-20 lg:h-62.5'>
                 <article>
-                    <p className='texto-apresentacao'>👋 Hello World! Thomaz. Prazer!</p>
-                    <p className='texto-apresentacao'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</p>
-                    <p className='texto-apresentacao'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</p>
-                    <p className='texto-apresentacao'>🚀 Sempre aprendendo...</p>
-                </article>
+                    <Text variant='secondary'>👋 Hello World! Thomaz. Prazer!</Text>
+                    <Text variant='secondary'>🎓 Universitário de Desenvolvimento Full-Stack pelo Sistema Estacio.</Text>
+                    <Text variant='secondary'>💡 Interesse em Desenvolvimento Front-End com Javascript, TypeScript, React, Tailwind...</Text>
+                    <Text variant='secondary'>🚀 Sempre aprendendo...</Text> 
+                </article>    
             </section>
         </ScaleFadeIn> 
     )

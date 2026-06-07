@@ -1,6 +1,17 @@
-*{
-  padding: 0;
-  margin: 0;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-spaceGrotesk: 'Space Grotesk', sans-serif;
+  --color-neutral: #060e20;
+  --color-primary: #6366F1;
+  --color-secondary: #8B5CF6;
+  --color-tertiary: #D946EF;
+  --color-default-text: #dee5ff;
+
+  --color-purple: #370f5a;
+  --color-purple-border: #5f377d;
+  --color-purple-hover: #6a2f9d;
 }
 
 /* ===== Scrollbar CSS ===== */
