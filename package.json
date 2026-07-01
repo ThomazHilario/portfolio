@@ -18,10 +18,10 @@
     "gsap": "^3.12.5",
     "motion": "^12.28.1",
     "radix-ui": "^1.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^6.18.0",
+    "react-router-dom": "^7.18.1",
     "tailwind-merge": "^3.6.0",
     "tailwind-variants": "^3.2.2",
     "tailwindcss": "^4.2.2",
@@ -37,6 +37,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.9.3",
-    "vite": "^7.3.1"
+    "vite": "npm:rolldown-vite@latest"
   }
 }
