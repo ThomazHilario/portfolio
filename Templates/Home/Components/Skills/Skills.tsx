@@ -28,20 +28,18 @@ export const Skills = () => (
 
             <CarouselViewport>
                 <CarouselContent className="flex gap-5 justify-between">
-                    <If conditional={!STACKS_VALUES}>
-                        {STACKS_VALUES.map((stack, index) => (
-                            <Card className="flex justify-center items-center bg-slate-800/40" key={index}>
-                                <CardHeader>
-                                    <stack.icon className="text-primary size-10" />
-                                </CardHeader>
-                                <CardContent>
-                                    <CardTitle className="text-neutral-400 px-0 pr-1 font-semibold text-xs flex justify-center items-center gap-1">
-                                        {stack.name}
-                                    </CardTitle>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </If>
+                    {STACKS_VALUES.map((stack, index) => (
+                        <Card className="flex justify-center items-center bg-slate-800/40" key={index}>
+                            <CardHeader>
+                                <stack.icon className="text-primary size-10" />
+                            </CardHeader>
+                            <CardContent>
+                                <CardTitle className="text-neutral-400 px-0 pr-1 font-semibold text-xs flex justify-center items-center gap-1">
+                                    {stack.name}
+                                </CardTitle>
+                            </CardContent>
+                        </Card>
+                    ))}
                 </CarouselContent> 
 
                 <div className='flex justify-center items-center gap-5 mt-5 lg:hidden'>
