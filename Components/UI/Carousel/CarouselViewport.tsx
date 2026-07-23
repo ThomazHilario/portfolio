@@ -1,3 +1,5 @@
+'use client';
+
 import type { PropsWithChildren } from "react"
 import { cn } from "@/Utils";
 import { useCarouselContext } from './Carousel';

@@ -12,6 +12,7 @@ const TitleVariants = tv({
             sm: 'text-xl',
             md: 'text-2xl',
             lg: 'text-3xl',
+            xl: 'text-5xl',
         }
     },
     defaultVariants: {

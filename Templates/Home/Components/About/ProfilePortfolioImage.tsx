@@ -1,11 +1,14 @@
 import { GithubIcon, LinkedinIcon } from '@/Components/Icons';
+import Image from 'next/image';
 
 export const ProfilePortfolioImage = () => (
     <div className='perfil flex flex-col gap-4 sm:h-full sm:justify-between sm:w-52.5 md:w-auto'>
-        <img 
+        <Image 
             className='fotoPerfil size-52.5 rounded-full m-auto border-black border-2 object-cover duration-700 transition-all sm:size-45 sm:block md:size-55 md:hover:size-60'
             src='/assets/foto.png'
-            alt="Imagem de perfil" 
+            alt="Imagem de perfil"
+            width={210} 
+            height={210} 
         />
 
         <div className='flex justify-center items-center gap-5'>

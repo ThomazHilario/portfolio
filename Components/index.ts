@@ -1,3 +1,4 @@
+export * from './If';
 export * from './Section';
 export * from './PDFViewer';
 export * from './Title';

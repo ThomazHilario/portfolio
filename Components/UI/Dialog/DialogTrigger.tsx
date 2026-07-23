@@ -7,7 +7,7 @@ type DialogTriggerProps = PropsWithChildren<Dialog.DialogTriggerProps>
 
 export const DialogTrigger = ({ children, className, ...props }: DialogTriggerProps) => (
     <Dialog.DialogTrigger 
-        className={cn(className)}
+        className={cn('cursor-pointer', className)}
         data-slot="dialog-trigger"
         {...props}
     >
