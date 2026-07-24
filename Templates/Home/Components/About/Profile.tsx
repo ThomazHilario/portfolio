@@ -1,4 +1,4 @@
-import { Title } from '@/Components/Title';
+import { Title } from '@/Components/Commons';
 import { SocialMedia } from './SocialMedia';
 
 import { ProfilePortfolioImage } from './ProfilePortfolioImage';

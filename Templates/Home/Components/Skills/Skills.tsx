@@ -7,13 +7,16 @@ import {
     CarouselContent, 
     CarouselNextButton, 
     CarouselPrevButton, 
-    CarouselViewport, 
-    If, 
+    CarouselViewport,
+} from "@/Components/UI";
+
+import {
     Section, 
     SectionHeader, 
     SectionSubtitle, 
     SectionTitle 
-} from "@/Components";
+} from '@/Components/Commons'
+
 import { STACKS_VALUES } from "@/Config";
 
 export const Skills = () => (

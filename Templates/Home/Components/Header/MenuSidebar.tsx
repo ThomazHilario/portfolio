@@ -13,7 +13,7 @@ import {
     DrawerHeader, 
     DrawerTitle,
     DrawerTrigger 
-} from '@/Components';
+} from '@/Components/UI';
 import { ButtonRedirect } from './ButtonRedirect';
 
 import { env } from "@/Config";

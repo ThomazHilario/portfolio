@@ -15,9 +15,10 @@ import {
     Section, 
     SectionHeader, 
     SectionTitle, 
-    SectionSubtitle, 
-    If
-} from "@/Components"
+    SectionSubtitle,
+} from "@/Components/Commons"
+
+import { If } from '@/Components/Utils';
 
 import { ProjectCard } from './ProjectCard'
 

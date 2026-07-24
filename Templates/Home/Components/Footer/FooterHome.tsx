@@ -1,5 +1,5 @@
-import { cn } from "@/Utils"
 import type { ComponentProps, PropsWithChildren } from "react"
+import { cn } from "@/Utils"
 
 type FooterProps = PropsWithChildren<ComponentProps<'footer'>>
 

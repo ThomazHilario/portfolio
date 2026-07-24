@@ -11,7 +11,7 @@ import {
     SectionHeader, 
     SectionTitle, 
     SectionSubtitle 
-} from "@/Components"
+} from "@/Components/Commons"
 
 import { CARRER_INFORMATION } from '@/Config'
 import { CardCarrerItem } from './CardCarrerItem'

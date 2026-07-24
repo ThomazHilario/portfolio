@@ -1,4 +1,4 @@
-import type { ComponentProps, DetailedHTMLProps, PropsWithChildren } from "react"
+import type { ComponentProps } from "react"
 import { Title } from "../Title";
 
 type SectionSubtitleProps = ComponentProps<typeof Title>

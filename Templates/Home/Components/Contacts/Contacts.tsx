@@ -11,7 +11,7 @@ import {
     SectionHeader, 
     SectionSubtitle, 
     SectionTitle 
-} from "@/Components";
+} from "@/Components/Commons";
 
 import { Mail, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/Components/Icons";

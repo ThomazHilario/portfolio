@@ -1,6 +1,7 @@
 'use client';
 
-import { Dialog, DialogContent, DialogTrigger, PDFViewer } from "@/Components";
+import { PDFViewer } from "@/Components/Commons";
+import { Dialog, DialogContent, DialogTrigger } from "@/Components/UI";
 
 export const DialogCV = () => (
     <Dialog>
