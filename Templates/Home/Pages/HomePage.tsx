@@ -1,7 +1,7 @@
 import { About, Carrer, Contacts, FooterHome, HeaderHome, Projects, Skills } from '../Components'
 
 export const HomePage = () => (
-    <div className='min-h-screen space-y-10'>
+    <div className='min-h-screen space-y-10 overflow-hidden'>
         <HeaderHome />
             <main className='min-h-screen space-y-10'>
                 <About />

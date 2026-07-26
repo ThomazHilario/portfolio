@@ -7,19 +7,19 @@ import {
     CardTitle, 
     CarouselItem 
 } from "@/Components/UI";
-import Image from "next/image";
 
+import Image from "next/image";
 
 type ProjectCardProps = {
     homepage: string;
     title: string;
     description: string;
     topics: string[];
-    banner: string;
+    banner: string | undefined;
 }
 
 
-export const ProjectCard = ({homepage, title, description, topics, banner = ""}: ProjectCardProps) => {
+export const ProjectCard = ({homepage, title, description, topics, banner}: ProjectCardProps) => {
     return (
         <CarouselItem className='w-105'>
             <a href={homepage} className='shadow-[0_20px_40px_-15px_rgba(96,99,238,0.1)]' target='blank'>
@@ -33,7 +33,7 @@ export const ProjectCard = ({homepage, title, description, topics, banner = ""}:
                         </CardContent>
 
                         <CardFooter className='relative border-none mt-auto'>
-                            <Image
+                            <img
                                 className='w-full transition-all duration-500 brightness-50 group-hover:brightness-80 h-60 rounded-lg inset-1 shadow-lg' 
                                 loading="eager"
                                 src={banner}

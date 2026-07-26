@@ -1,9 +1,11 @@
 import { Text } from '@/Components'
+import { SlideIn } from '@/Components/Transitions'
+
 import { Profile } from './Profile'
 
 export const About = () => {
     return(
-        <section>  
+        <SlideIn initial='slideLeft'>  
             <Profile />     
 
             <section className='p-1.5 flex flex-col-reverse justify-center items-center gap-20 lg:h-62.5'>
@@ -14,6 +16,6 @@ export const About = () => {
                     <Text variant='secondary'>🚀 Sempre aprendendo...</Text> 
                 </article>    
             </section>
-        </section> 
+        </SlideIn> 
     )
 }
