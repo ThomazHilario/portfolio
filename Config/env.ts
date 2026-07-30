@@ -3,4 +3,9 @@ export const env = {
     GITHUB_USERNAME: process.env.NEXT_PUBLIC_GITHUB_USERNAME || '',
     GITHUB_REPOSITORIES_TYPE: process.env.NEXT_PUBLIC_GITHUB_REPOSITORIES_TYPE || '',
     FILE_NAME_EXPORT: process.env.NEXT_PUBLIC_FILE_NAME_EXPORT || '',
+    PHONENUMBER: process.env.NEXT_PUBLIC_PHONENUMBER || '',
+    MAIL_URL: process.env.NEXT_PUBLIC_MAIL_URL || '',
+    WHATSAPP_URL: process.env.NEXT_PUBLIC_WHATSAPP_URL || '',
+    LINKEDIN_URL: process.env.NEXT_PUBLIC_LINKEDIN_URL || '',
+    GITHUB_URL: process.env.NEXT_PUBLIC_GITHUB_URL || '',
 }

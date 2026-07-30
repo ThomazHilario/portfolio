@@ -30,7 +30,6 @@ export const Projects = () => {
 
     const projects = useMemo(() => data?.map(project => ({ ...project, banner: encodeURI(project.banner[0]) })) || [], [data])
 
-    console.log(projects)
     return(
         <SlideIn initial="slideLeft">
             <Section className='projects'>

@@ -5,13 +5,17 @@ import {
     Html5Icon, 
     JavascriptIcon, 
     JestIcon, 
+    LinkedinIcon, 
     ReactIcon, 
     TailwindIcon, 
     TypescriptIcon, 
     ViteIcon 
 } from '@/Components/Icons'
 
-import { UserRound, ZapIcon, Briefcase, Timeline, Mail } from 'lucide-react'
+import { UserRound, ZapIcon, Briefcase, Timeline, Mail, Phone } from 'lucide-react'
+
+import { env } from './'
+import { label } from 'motion/react-client'
 
 export const MENU_OPTIONS = [
     { id: "sobre-option", name: 'Sobre', icon: UserRound },
@@ -68,3 +72,30 @@ export const CARRER_INFORMATION = {
         }
     ]
 }
+
+export const CONTACTS_OPTIONS = [
+    {
+        label: 'E-mail',
+        value: 'thomazhilario5@gmail.com',
+        href: env.MAIL_URL,
+        icon: Mail
+    },
+    {
+        label: 'Telefone',
+        value: env.PHONENUMBER,
+        href: env.WHATSAPP_URL,
+        icon: Phone
+    },
+    {
+        label: 'Linkedin',
+        value: '@thomazalvesdev',
+        href: env.LINKEDIN_URL,
+        icon: LinkedinIcon
+    },
+    {
+        label: 'Github',
+        value: '@ThomazHilario',
+        href: env.GITHUB_URL,
+        icon: GithubIcon
+    },
+]
