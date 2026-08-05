@@ -1,6 +1,5 @@
-import type { ButtonHTMLAttributes, DetailedHTMLProps, PropsWithChildren } from "react"
-import { cn } from "@/Utils";
-import { tv } from "tailwind-variants";
+import type { ComponentProps, DetailedHTMLProps, PropsWithChildren } from "react"
+import { tv, VariantProps } from "tailwind-variants";
 
 const ButtonVariants = tv({
     base: 'flex items-center justify-center text-neutral cursor-pointer transition-colors duration-300',
@@ -17,7 +16,7 @@ const ButtonVariants = tv({
     }
 })
 
-type ButtonProps = ComponentsProps<'button'> & VariantProps<typeof ButtonVariants>
+type ButtonProps = ComponentProps<'button'> & VariantProps<typeof ButtonVariants>
 
 export const Button = ({ children, className, variant, type = "button", ...props }: ButtonProps) => {
     return (
