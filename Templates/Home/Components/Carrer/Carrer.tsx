@@ -21,7 +21,7 @@ export const Carrer = () => {
     const { academico, profissional } = CARRER_INFORMATION
 
     return(
-        <SlideIn initial="slideRight">
+        <SlideIn initial="slideRight" id='carrer-section'>
             <Section className='carreira'>
                 <SectionHeader>
                     <SectionTitle as='h1'>Carreira</SectionTitle>

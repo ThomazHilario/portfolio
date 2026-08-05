@@ -13,14 +13,12 @@ import {
     SectionTitle 
 } from "@/Components/Commons";
 
-import { Contact, Mail, Phone } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/Components/Icons";
 import { SlideIn } from "@/Components/Transitions";
 import { CONTACTS_OPTIONS } from "@/Config";
 
 export const Contacts = () => {
     return(
-        <SlideIn initial="slideLeft">
+        <SlideIn initial="slideLeft" id='contacts-section'>
             <Section>
                 <SectionHeader>
                     <SectionTitle as="h1">Contatos</SectionTitle>

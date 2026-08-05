@@ -31,7 +31,7 @@ export const Projects = () => {
     const projects = useMemo(() => data?.map(project => ({ ...project, banner: encodeURI(project.banner[0]) })) || [], [data])
 
     return(
-        <SlideIn initial="slideLeft">
+        <SlideIn initial="slideLeft" id='projects-section'>
             <Section className='projects'>
                 <SectionHeader>
                     <SectionTitle as='h1'>Projetos</SectionTitle>

@@ -22,7 +22,7 @@ import { MENU_OPTIONS } from "@/Config";
 
 // type
 type MenuMobileProps = {
-    scrollSection: (text: string) => void;
+    scrollSection: (sectioId: string) => void;
 }
 
 export const MenuSidebar = ({ scrollSection }: MenuMobileProps) => {
@@ -60,8 +60,8 @@ export const MenuSidebar = ({ scrollSection }: MenuMobileProps) => {
                         <Button 
                             key={option.id} 
                             className="gap-3"
-                            variant="sidebarItems"
-                            onClick={() => handleScrollSection(() => scrollSection(option.name))}     
+                            variant="sidebarItem"
+                            onClick={() => handleScrollSection(() => scrollSection(option.id))}     
                             aria-label={`Navegar para seção ${option.name}`}
                         >
                             {<option.icon size={20} color="gray" />}

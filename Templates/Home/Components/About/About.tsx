@@ -5,7 +5,7 @@ import { Profile } from './Profile'
 
 export const About = () => {
     return(
-        <SlideIn initial='slideLeft'>  
+        <SlideIn initial='slideLeft' id='about-section'>  
             <Profile />     
 
             <section className='p-1.5 flex flex-col-reverse justify-center items-center gap-20 lg:h-62.5'>

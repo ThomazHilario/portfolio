@@ -22,7 +22,7 @@ import { SlideIn } from "@/Components/Transitions";
 import { STACKS_VALUES } from "@/Config";
 
 export const Skills = () => (
-    <SlideIn initial="slideRight">
+    <SlideIn initial="slideRight" id='skills-section'>
         <Section className="stacks">
             <SectionHeader>
                 <SectionTitle as="h1">Stacks</SectionTitle>

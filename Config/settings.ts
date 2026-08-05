@@ -15,14 +15,13 @@ import {
 import { UserRound, ZapIcon, Briefcase, Timeline, Mail, Phone } from 'lucide-react'
 
 import { env } from './'
-import { label } from 'motion/react-client'
 
 export const MENU_OPTIONS = [
-    { id: "sobre-option", name: 'Sobre', icon: UserRound },
-    { id: "hability-option", name: 'Habilidades', icon: ZapIcon },
-    { id: "projects-options", name: 'Projetos', icon: Briefcase },
-    { id: "carrer-optio", name: 'Carreira', icon: Timeline },
-    { id: "contacts-option", name: 'Contatos', icon: Mail },
+    { id: "about-section", name: 'Sobre', icon: UserRound },
+    { id: "skills-section", name: 'Habilidades', icon: ZapIcon },
+    { id: "projects-section", name: 'Projetos', icon: Briefcase },
+    { id: "carrer-section", name: 'Carreira', icon: Timeline },
+    { id: "contacts-section", name: 'Contatos', icon: Mail },
 ]
 
 export const STACKS_VALUES = [
