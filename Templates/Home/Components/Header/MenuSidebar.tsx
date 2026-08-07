@@ -35,7 +35,11 @@ export const MenuSidebar = ({ scrollSection }: MenuMobileProps) => {
 
     return(
         <Drawer direction='left' open={isOpen} onOpenChange={OnToggle}>
-            <DrawerTrigger className='sm:hidden cursor-pointer' aria-label="Abrir menu de navegação">
+            <DrawerTrigger 
+                aria-label="Abrir menu de navegação" 
+                className='sm:hidden cursor-pointer' 
+                title="Botão para abrir menu de navegação"
+            >
                 <Menu color="gray" size={30} />
             </DrawerTrigger>
 
