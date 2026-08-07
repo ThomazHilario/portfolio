@@ -1,5 +1,7 @@
-import { GithubIcon, LinkedinIcon } from '@/Components/Icons';
 import Image from 'next/image';
+import Link from 'next/link';
+
+import { GithubIcon, LinkedinIcon } from '@/Components/Icons';
 
 import { env } from '@/Config'
 
@@ -15,8 +17,12 @@ export const ProfilePortfolioImage = () => (
         />
 
         <div className='flex justify-center items-center gap-5'>
-            <a href={env.GITHUB_URL} target='blank'><GithubIcon className='text-primary size-5'/></a>
-            <a href={env.LINKEDIN_URL} target='blank'><LinkedinIcon className='text-primary size-5'/></a>
+            <Link href={env.GITHUB_URL} target='blank' aria-label='Botão que redireciona o usuário para o github'>
+                <GithubIcon className='text-primary size-5'/>
+            </Link>
+            <Link href={env.LINKEDIN_URL} target='blank' aria-label='Botão que redireciona o usuário para o linkedin'>
+                <LinkedinIcon className='text-primary size-5'/>
+            </Link>
         </div>
     </div>
 )
