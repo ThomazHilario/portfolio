@@ -62,8 +62,8 @@ export const Projects = () => {
                         </CarouselContent>
 
                         <div className='flex justify-center items-center gap-5 mt-5 lg:hidden'>
-                            <CarouselPrevButton/>
-                            <CarouselNextButton/>
+                            <CarouselPrevButton aria-label='Botão para voltar o carrossel' />
+                            <CarouselNextButton aria-label='Botão para avançar o carrossel'/>
                         </div>
                     </CarouselViewport>
 

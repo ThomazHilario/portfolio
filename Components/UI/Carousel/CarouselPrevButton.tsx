@@ -1,6 +1,6 @@
 'use client';
 
-import type { PropsWithChildren } from "react"
+import type { ComponentProps } from "react"
 
 import { cn } from "@/Utils";
 import { useCarouselContext } from './Carousel';
@@ -8,9 +8,7 @@ import { Button } from '../Button';
 
 import { ChevronLeft } from 'lucide-react'
 
-type CarouselPrevButtonProps = PropsWithChildren<{
-    className?: string;
-}>
+type CarouselPrevButtonProps = ComponentProps<'button'>;
 
 export const CarouselPrevButton = ({ children = <ChevronLeft color="white" />, className }: CarouselPrevButtonProps) => {
 

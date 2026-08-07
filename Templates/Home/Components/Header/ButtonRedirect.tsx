@@ -1,7 +1,8 @@
-import { cn } from "@/Utils";
+import { ComponentProps } from "react";
 import { Button } from "@/Components/UI";
+import { cn } from "@/Utils";
 
-type ButtonRedirectProps = { className?: string }
+type ButtonRedirectProps = ComponentProps<'button'>
 
 export const ButtonRedirect = ({ className }: ButtonRedirectProps) => (
     <Button className={cn(className)} variant="primary">

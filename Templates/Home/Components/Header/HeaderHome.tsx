@@ -25,7 +25,7 @@ export const HeaderHome = () => {
                 </menu>
             </nav>
 
-            <ButtonRedirect className="hidden md:flex" />
+            <ButtonRedirect aria-label="" className="hidden md:flex" />
         </header>
     )
 }
