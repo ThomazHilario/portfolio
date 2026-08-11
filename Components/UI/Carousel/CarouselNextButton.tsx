@@ -1,6 +1,6 @@
 'use client';
 
-import type { PropsWithChildren } from "react"
+import type { ComponentProps } from "react"
 
 import { useCarouselContext } from './Carousel';
 import { Button } from '../Button';
@@ -9,9 +9,7 @@ import { ChevronRight } from 'lucide-react'
 
 import { cn } from "@/Utils";
 
-type CarouselNextButtonProps = PropsWithChildren<{
-    className?: string;
-}>
+type CarouselNextButtonProps = ComponentProps<'button'>;
 
 export const CarouselNextButton = ({ children = <ChevronRight color="white" />, className }: CarouselNextButtonProps) => {
 
