@@ -1,9 +1,11 @@
-import type { ComponentProps } from "react";
+import type { ComponentProps } from 'react';
 
-import { Drawer as DrawerPrimitive } from "vaul";
+import { Drawer as DrawerPrimitive } from 'vaul';
 
-type DrawerProps = ComponentProps<typeof DrawerPrimitive.Root>
+type DrawerProps = ComponentProps<typeof DrawerPrimitive.Root>;
 
 export const Drawer = ({ children, ...props }: DrawerProps) => (
-    <DrawerPrimitive.Root data-slot="drawer" {...props}>{children}</DrawerPrimitive.Root>
-)
+  <DrawerPrimitive.Root data-slot="drawer" {...props}>
+    {children}
+  </DrawerPrimitive.Root>
+);

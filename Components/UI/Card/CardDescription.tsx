@@ -1,14 +1,20 @@
-import type { ComponentProps } from "react"
-import { cn } from "@/Utils"
+import type { ComponentProps } from 'react';
+import { cn } from '@/Utils';
 
-type CardDescriptionProps = ComponentProps<"div">
+type CardDescriptionProps = ComponentProps<'div'>;
 
-export const CardDescription = ({ className, ...props }: CardDescriptionProps) => {
+export const CardDescription = ({
+  className,
+  ...props
+}: CardDescriptionProps) => {
   return (
     <div
       data-slot="card-description"
-      className={cn("text-sm text-muted-foreground font-spaceGrotesk whitespace-break-spaces text-justify break-all", className)}
+      className={cn(
+        'text-sm text-muted-foreground font-spaceGrotesk whitespace-break-spaces text-justify break-all',
+        className,
+      )}
       {...props}
     />
-  )
-}
+  );
+};

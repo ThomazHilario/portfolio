@@ -1,23 +1,20 @@
-import type { ComponentProps } from "react"
+import type { ComponentProps } from 'react';
 
-import { Drawer as DrawerPrimitive } from "vaul";
+import { Drawer as DrawerPrimitive } from 'vaul';
 
-type DrawerTitleProps = ComponentProps<typeof DrawerPrimitive.Title>
+type DrawerTitleProps = ComponentProps<typeof DrawerPrimitive.Title>;
 
-import { cn } from "@/Utils";
+import { cn } from '@/Utils';
 
-export const DrawerTitle = ({
-  className,
-  ...props
-}: DrawerTitleProps) => {
+export const DrawerTitle = ({ className, ...props }: DrawerTitleProps) => {
   return (
     <DrawerPrimitive.Title
       data-slot="drawer-title"
       className={cn(
-        "cn-font-heading text-base font-medium text-foreground",
-        className
+        'cn-font-heading text-base font-medium text-foreground',
+        className,
       )}
       {...props}
     />
-  )
-}
+  );
+};

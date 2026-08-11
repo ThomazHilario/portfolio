@@ -1,12 +1,15 @@
-import type { PropsWithChildren } from "react"
-import { cn } from "@/Utils";
+import type { PropsWithChildren } from 'react';
+import { cn } from '@/Utils';
 
 type CarouselContentProps = PropsWithChildren<{
-    className?: string;
-}>
+  className?: string;
+}>;
 
-export const CarouselContent = ({ children, className }: CarouselContentProps) => (
-    <div className={cn("flex touch-pan-y touch-pinch-zoom", className)}>
-        {children}
-    </div>
-)
+export const CarouselContent = ({
+  children,
+  className,
+}: CarouselContentProps) => (
+  <div className={cn('flex touch-pan-y touch-pinch-zoom', className)}>
+    {children}
+  </div>
+);
