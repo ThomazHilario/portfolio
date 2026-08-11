@@ -9,7 +9,7 @@
     "lint": "eslint",
     "prepare": "husky",
     "format": "prettier --check",
-    "typescript:typecheck": "tsc --noEmit --skipLibCheck"
+    "validate:typecheck": "tsc --noEmit --skipLibCheck"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,css,json,md}": [
