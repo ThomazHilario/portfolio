@@ -1,13 +1,15 @@
-import { Metadata } from "next";
-import { HomePage } from "@/Templates";
+import { Metadata } from 'next';
+import { HomePage } from '@/Templates';
 
 export const metadata: Metadata = {
   title: 'Thomaz Alves - Portfolio',
-  description: 'portfolio of Thomaz Alves, a front-end developer specializing in React and Next.js. Explore my projects, skills, and experience in web development.',
+  description:
+    'portfolio of Thomaz Alves, a front-end developer specializing in React and Next.js. Explore my projects, skills, and experience in web development.',
   robots: 'index, follow',
   openGraph: {
     title: 'Thomaz Alves - Portfolio',
-    description: 'portfolio of Thomaz Alves, a front-end developer specializing in React and Next.js. Explore my projects, skills, and experience in web development.',
+    description:
+      'portfolio of Thomaz Alves, a front-end developer specializing in React and Next.js. Explore my projects, skills, and experience in web development.',
     url: 'https://thomazalves.vercel.app/imagem-home.png',
     siteName: 'Thomaz Alves - Portfolio',
     locale: 'pt-br',
@@ -17,12 +19,12 @@ export const metadata: Metadata = {
         width: 800,
         height: 600,
         url: 'https://thomazalves.vercel.app/imagem-home.png',
-        alt: 'Thomaz Alves - Portfolio image'
-      }
-    ]
-  }
-}
+        alt: 'Thomaz Alves - Portfolio image',
+      },
+    ],
+  },
+};
 
 export default function Home() {
-  return <HomePage />
+  return <HomePage />;
 }

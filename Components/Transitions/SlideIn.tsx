@@ -1,7 +1,7 @@
 import { AnimatePresence, Variants } from 'motion/react';
 import * as motion from 'motion/react-client';
 
-import { ComponentProps } from 'react';
+import { Children, ComponentProps } from 'react';
 
 const slideInVariants: Variants = {
   slideLeft: {
@@ -20,7 +20,6 @@ export const SlideIn = ({ children, initial, ...props }: SlideInProps) => (
   <AnimatePresence>
     <motion.div
       variants={slideInVariants}
-      children={children}
       initial={initial}
       whileInView={{ opacity: 1, x: 0, scale: 1 }}
       transition={{ duration: 0.6 }}
@@ -32,6 +31,8 @@ export const SlideIn = ({ children, initial, ...props }: SlideInProps) => (
         scale: 0.95,
       }}
       {...props}
-    />
+    >
+      {children}
+    </motion.div>
   </AnimatePresence>
 );
