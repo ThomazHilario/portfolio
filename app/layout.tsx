@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import "../styles";
+import type { Metadata } from 'next';
+import '../styles';
 
 export const metadata: Metadata = {
-  title: "Thomaz Alves",
-  description: "Portfolio de Thomaz Alves",
+  title: 'Thomaz Alves',
+  description: 'Portfolio de Thomaz Alves',
 };
 
 export default function RootLayout({
@@ -13,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className="bg-neutral flex flex-col">
-        {children}
-      </body>
+      <body className="bg-neutral flex flex-col">{children}</body>
     </html>
   );
 }

@@ -1,26 +1,26 @@
-"use client";
+'use client';
 
-import { useState } from "react"
+import { useState } from 'react';
 
 export const useDisclosure = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const OnToggle = () => {
-        setIsOpen(!isOpen)
-    }
+  const OnToggle = () => {
+    setIsOpen(!isOpen);
+  };
 
-    const SetOpen = (value: boolean) => {
-        setIsOpen(value)
-    }
+  const SetOpen = (value: boolean) => {
+    setIsOpen(value);
+  };
 
-    const onClose = () => {
-        setIsOpen(false)
-    }
+  const onClose = () => {
+    setIsOpen(false);
+  };
 
-    return {
-        isOpen,
-        OnToggle,
-        SetOpen,
-        onClose
-    }
-}
+  return {
+    isOpen,
+    OnToggle,
+    SetOpen,
+    onClose,
+  };
+};
