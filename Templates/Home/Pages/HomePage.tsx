@@ -1,19 +1,27 @@
-import { About, Carrer, Contacts, FooterHome, HeaderHome, Projects, Skills } from '../Components'
+import {
+  About,
+  Carrer,
+  Contacts,
+  FooterHome,
+  HeaderHome,
+  Projects,
+  Skills,
+} from '../Components';
 
 export const HomePage = () => (
-    <div className='min-h-screen space-y-10'>
-        <HeaderHome />
-            <main className='min-h-screen space-y-10 overflow-hidden'>
-                <About />
+  <div className="min-h-screen space-y-10">
+    <HeaderHome />
+    <main className="min-h-screen space-y-10 overflow-hidden">
+      <About />
 
-                <Skills />
+      <Skills />
 
-                <Projects />
+      <Projects />
 
-                <Carrer />
+      <Carrer />
 
-                <Contacts />
-            </main>
-        <FooterHome />
-    </div>
-)
+      <Contacts />
+    </main>
+    <FooterHome />
+  </div>
+);

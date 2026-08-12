@@ -1,10 +1,12 @@
-import type { ComponentProps } from "react"
+import type { ComponentProps } from 'react';
 
-import { Drawer as DrawerPrimitive } from "vaul";
+import { Drawer as DrawerPrimitive } from 'vaul';
 
-type DrawerDescriptionProps = ComponentProps<typeof DrawerPrimitive.Description>
+type DrawerDescriptionProps = ComponentProps<
+  typeof DrawerPrimitive.Description
+>;
 
-import { cn } from "@/Utils";
+import { cn } from '@/Utils';
 
 export const DrawerDescription = ({
   className,
@@ -13,8 +15,8 @@ export const DrawerDescription = ({
   return (
     <DrawerPrimitive.Description
       data-slot="drawer-description"
-      className={cn("text-sm text-muted-foreground", className)}
+      className={cn('text-sm text-muted-foreground', className)}
       {...props}
     />
-  )
-}
+  );
+};

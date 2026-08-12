@@ -1,23 +1,21 @@
 import { gsap } from 'gsap';
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-gsap.registerPlugin(ScrollToPlugin); 
+gsap.registerPlugin(ScrollToPlugin);
 
 export const useScrollSection = () => {
+  const scrollSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
 
-    const scrollSection = (sectionId: string) => {
-        const section = document.getElementById(sectionId);
-
-        if(section) {
-            gsap.to(window, {
-                duration: 1,
-                scrollTo: section.offsetTop - 120,
-            })
-        } 
+    if (section) {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: section.offsetTop - 120,
+      });
     }
+  };
 
-
-    return {
-        scrollSection
-    }
-}
+  return {
+    scrollSection,
+  };
+};

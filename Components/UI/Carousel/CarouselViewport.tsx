@@ -1,20 +1,22 @@
 'use client';
 
-import type { PropsWithChildren } from "react"
-import { cn } from "@/Utils";
+import type { PropsWithChildren } from 'react';
+import { cn } from '@/Utils';
 import { useCarouselContext } from './Carousel';
 
 type CarouselViewportProps = PropsWithChildren<{
-    className?: string;
-}>
+  className?: string;
+}>;
 
-export const CarouselViewport = ({ children, className }: CarouselViewportProps) => {
+export const CarouselViewport = ({
+  children,
+  className,
+}: CarouselViewportProps) => {
+  const { carouselRef } = useCarouselContext();
 
-    const { carouselRef } = useCarouselContext()
-
-    return (
-        <div className={cn("overflow-hidden", className)} ref={carouselRef}>
-            {children}
-        </div>
-    )
-}
+  return (
+    <div className={cn('overflow-hidden', className)} ref={carouselRef}>
+      {children}
+    </div>
+  );
+};

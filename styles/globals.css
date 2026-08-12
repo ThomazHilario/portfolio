@@ -1,13 +1,13 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @theme {
-  --font-sans: "Space Grotesk", sans-serif;
+  --font-sans: 'Space Grotesk', sans-serif;
   --font-spaceGrotesk: 'Space Grotesk', sans-serif;
   --color-neutral: #060e20;
-  --color-primary: #6366F1;
-  --color-secondary: #8B5CF6;
-  --color-tertiary: #D946EF;
+  --color-primary: #6366f1;
+  --color-secondary: #8b5cf6;
+  --color-tertiary: #d946ef;
   --color-default-text: #dee5ff;
 
   --color-purple: #370f5a;
@@ -16,27 +16,27 @@
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #61519a #242424;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #61519a #242424;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 10px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #242424;
-  }
+*::-webkit-scrollbar-track {
+  background: #242424;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #61519a;
-    border-radius: 10px;
-    border: 0px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #61519a;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
+}
 
-  ul{
-    list-style: none;
-  }
+ul {
+  list-style: none;
+}
