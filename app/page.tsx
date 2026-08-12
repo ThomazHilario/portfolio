@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'Thomaz Alves - Portfolio',
     description:
       'portfolio of Thomaz Alves, a front-end developer specializing in React and Next.js. Explore my projects, skills, and experience in web development.',
-    url: 'https://thomazalves.vercel.app/imagem-home.png',
+    url: 'https://thomazalves.vercel.app',
     siteName: 'Thomaz Alves - Portfolio',
     locale: 'pt-br',
     type: 'website',
