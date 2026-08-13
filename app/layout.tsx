@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       {
         width: 800,
         height: 600,
-        url: 'https://thomazalves.vercel.app/imagem-home.png',
+        url: 'https://thomazalves.vercel.app/image-home.png',
         alt: 'Thomaz Alves - Portfolio image',
       },
     ],
